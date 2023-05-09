@@ -19,7 +19,7 @@ with DAG(
     start_date=datetime(2023, 5, 9),
     schedule_interval='@daily'
 ) as dag:
-    # 1. Check if the API is up
+    # Check if the API is up
     task_is_api_active = HttpSensor(
         task_id='is_api_active',
         http_conn_id='',
