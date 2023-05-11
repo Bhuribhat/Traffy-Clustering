@@ -16,6 +16,8 @@
 
 go to `localhost:8080`
 
+username & password : airflow
+
 ## Close Airflow Docker
 
 ```sh
