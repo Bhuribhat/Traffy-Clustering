@@ -1,0 +1,13 @@
+[2023-05-09T13:45:18.338+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.get_json_data_from_fondue manual__2023-05-09T13:45:16.209214+00:00 [queued]>
+[2023-05-09T13:45:18.348+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.get_json_data_from_fondue manual__2023-05-09T13:45:16.209214+00:00 [queued]>
+[2023-05-09T13:45:18.349+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-09T13:45:18.365+0000] {taskinstance.py:1350} INFO - Executing <Task(SimpleHttpOperator): get_json_data_from_fondue> on 2023-05-09 13:45:16.209214+00:00
+[2023-05-09T13:45:18.368+0000] {standard_task_runner.py:57} INFO - Started process 400 to run task
+[2023-05-09T13:45:18.371+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'get_json_data_from_fondue', 'manual__2023-05-09T13:45:16.209214+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpq2sqp5cz']
+[2023-05-09T13:45:18.373+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask get_json_data_from_fondue
+[2023-05-09T13:45:18.426+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.get_json_data_from_fondue manual__2023-05-09T13:45:16.209214+00:00 [running]> on host 644b096b3cec
+[2023-05-09T13:45:18.522+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='get_json_data_from_fondue' AIRFLOW_CTX_EXECUTION_DATE='2023-05-09T13:45:16.209214+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-05-09T13:45:16.209214+00:00'
+[2023-05-09T13:45:18.523+0000] {http.py:123} INFO - Calling HTTP method
+[2023-05-09T13:45:18.951+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=get_json_data_from_fondue, execution_date=20230509T134516, start_date=20230509T134518, end_date=20230509T134518
+[2023-05-09T13:45:18.986+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-09T13:45:19.004+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
