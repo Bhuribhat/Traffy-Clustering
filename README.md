@@ -1,4 +1,4 @@
-# Traffy Clustering Project
+# Traffy Fondue Clustering Project
 
 __Created by__  
 
@@ -6,19 +6,29 @@ __Created by__
 - 6330301321 Panithi Khamwangyang
 - 6330305921 Pras Pitasawad
 
+## Description
+
+This project is the final project for the Data Science and Data Engineering course. The goal of this project is to apply clustering techniques to the Traffic Fondue dataset to uncover interesting insights in Thailand.  
+
+We will be using Python and popular data science libraries such as Pandas, Scikit-Learn, Folium, and Matplotlib to preprocess the data, perform the clustering analysis, and visualize the results.  
+
+Once we have identified the clusters, we will use visualization techniques to explore the relationships between the clusters. The goal is to uncover interesting patterns and insights about traffic in Thailand that could be used to inform policy decisions.  
+
+By the end of this project, we will have gained experience in applying clustering techniques to real-world datasets, using data visualization tools to communicate insights effectively, and working with common data science libraries in Python. We hope that our findings will contribute to a better understanding of traffic patterns in Thailand and inspire further research in this area.
+
 
 ## Initializing Environment
 
-If you are using linux os, please do the following:
+If you are using linux os, please follow the following steps:
 
-```sh
+```bash
 >> mkdir ./dags ./logs ./plugins
 >> echo -e  "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 ```
 
-For other operating systems, you may get a warning that __AIRFLOW_UID__ is not set, but you can safely ignore it. You can also manually create an __.env__ file in the same folder as __docker-compose.yaml__ with this content to get rid of the warning:  
+> Note: For other operating systems, you may get a warning that __AIRFLOW_UID__ is not set, but you can safely ignore it. You can also manually create an __.env__ file in the same folder as __docker-compose.yaml__ with this content to get rid of the warning:  
 
-```sh
+```bash
 AIRFLOW_UID=50000
 ```
 
@@ -29,7 +39,7 @@ AIRFLOW_UID=50000
 
 ## Run Airflow
 
-```sh
+```bash
 >> docker-compose up airflow-init   # run database and create first user account
 >> docker-compose up -d             # run container in background
 ```
@@ -37,7 +47,7 @@ AIRFLOW_UID=50000
 
 Run `docker ps` to check the condition of the containers and make sure that no containers are in unhealthy condition:
 
-```sh
+```bash
 >> docker ps
 CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS                    PORTS                              NAMES
 247ebe6cf87a   apache/airflow:2.6.0   "/usr/bin/dumb-init …"   3 minutes ago    Up 3 minutes (healthy)    8080/tcp                           compose_airflow-worker_1
@@ -55,6 +65,6 @@ The default account has the login __airflow__ and the password __airflow__.
 
 ## Close Airflow Docker
 
-```sh
+```bash
 >> docker-compose down -v
 ```
