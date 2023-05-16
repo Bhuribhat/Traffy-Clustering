@@ -7,6 +7,8 @@ from datetime import datetime, timedelta
 
 from utils.load_data import load_data
 from utils.clean_data import clean_data
+from utils.clustering import kmean_cluster
+from utils.visualize import visualize_data
 
 default_args = {
     'owner': 'pras',
@@ -42,6 +44,16 @@ with DAG(
         python_callable=clean_data
     )
 
-    task_is_api_active >> task_get_json_data_from_fondue >> task_clean_fondue_data
+    task_clusterring = PythonOperator(
+        task_id='clustering',
+        python_callable=kmean_cluster
+    )
+
+    task_visualzation = PythonOperator(
+        task_id='visualize_data',
+        python_callable=visualize_data
+    )
+
+    task_is_api_active >> task_get_json_data_from_fondue >> task_clean_fondue_data >> task_clusterring >> task_visualzation
 
 # dag = DAG('get_json_data', default_args=default_args, schedule_interval=timedelta(days=1))

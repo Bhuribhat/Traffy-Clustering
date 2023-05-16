@@ -62,6 +62,8 @@ def clean_data(ti, **context):
     filter_criteria = context['dag_run'].conf['filter']
     print(filter_criteria)
     df_exploded = df_exploded[df_exploded['type'].isin(filter_criteria)]
+  except Exception as e:
+    print("error lol")
   finally:
     df_exploded.name = "cleaned_fondue"
     save_files([df_exploded])

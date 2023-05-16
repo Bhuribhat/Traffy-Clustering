@@ -1,1 +1,7 @@
 scipy
+mlflow
+scikit-learn
+seaborn
+matplotlib
+folium
+geopandas
