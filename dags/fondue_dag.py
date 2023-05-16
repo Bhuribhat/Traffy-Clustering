@@ -2,7 +2,10 @@ from airflow import DAG
 from airflow.providers.http.sensors.http import HttpSensor
 from airflow.operators.email_operator import EmailOperator
 from airflow.providers.http.operators.http import SimpleHttpOperator
+from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
+
+from utils.load_data import load_data
 
 default_args = {
     'owner': 'pras',
@@ -25,25 +28,14 @@ with DAG(
     task_is_api_active = HttpSensor(
         task_id='is_api_active',
         http_conn_id='',
-        endpoint='https://publicapi.traffy.in.th/ud/search'
+        endpoint='https://publicapi.traffy.in.th/share/teamchadchart/search'
     )
 
-    task_get_json_data_from_fondue = SimpleHttpOperator(
-        task_id='get_json_data_from_fondue',
-        http_conn_id='',  										# specify the connection ID for your API
-        endpoint='https://publicapi.traffy.in.th/ud/search',  	# specify the API endpoint to retrieve JSON data
-        method='GET',
-        headers={"Content-Type": "application/json"},
-        dag=dag,
+    task_get_json_data_from_fondue = PythonOperator(
+        task_id='fetching_data',
+        python_callable=load_data
     )
 
-    task_send_email = EmailOperator(
-        task_id='send_email',
-        to=['Bhuribhat@gmail.com'],
-        subject='Your traffy data is ready',
-        html_content='Please check your dashboard.'
-    )
-
-    task_is_api_active >> task_get_json_data_from_fondue >> task_send_email
+    task_is_api_active >> task_get_json_data_from_fondue
 
 # dag = DAG('get_json_data', default_args=default_args, schedule_interval=timedelta(days=1))
