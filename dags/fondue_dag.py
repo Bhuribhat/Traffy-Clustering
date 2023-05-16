@@ -6,6 +6,7 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 
 from utils.load_data import load_data
+from utils.clean_data import clean_data
 
 default_args = {
     'owner': 'pras',
@@ -20,7 +21,7 @@ default_args = {
 with DAG(
     dag_id='fondue_dag',
     default_args=default_args,
-    description='Get data from fondue website',
+    description='Visualize fondue data with poor people',
     start_date=datetime(2023, 5, 9),
     schedule_interval='@daily'
 ) as dag:
@@ -36,6 +37,11 @@ with DAG(
         python_callable=load_data
     )
 
-    task_is_api_active >> task_get_json_data_from_fondue
+    task_clean_fondue_data = PythonOperator(
+        task_id='clean_fondue_data',
+        python_callable=clean_data
+    )
+
+    task_is_api_active >> task_get_json_data_from_fondue >> task_clean_fondue_data
 
 # dag = DAG('get_json_data', default_args=default_args, schedule_interval=timedelta(days=1))

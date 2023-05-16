@@ -1,0 +1,37 @@
+[2023-05-16T07:11:08.845+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-14T00:00:00+00:00 [queued]>
+[2023-05-16T07:11:08.863+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-14T00:00:00+00:00 [queued]>
+[2023-05-16T07:11:08.864+0000] {taskinstance.py:1331} INFO - Starting attempt 2 of 2
+[2023-05-16T07:11:08.897+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-14 00:00:00+00:00
+[2023-05-16T07:11:08.911+0000] {standard_task_runner.py:57} INFO - Started process 704 to run task
+[2023-05-16T07:11:08.914+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-14T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmp2jbmdybj']
+[2023-05-16T07:11:08.917+0000] {standard_task_runner.py:85} INFO - Job 30: Subtask clean_fondue_data
+[2023-05-16T07:11:08.995+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-14T00:00:00+00:00 [running]> on host a76a3b1a3408
+[2023-05-16T07:11:09.143+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-14T00:00:00+00:00'
+[2023-05-16T07:11:09.219+0000] {taskinstance.py:1847} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'province'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 181, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 198, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/utils/clean_data.py", line 26, in clean_data
+    df['province'] = df['province'].apply(lambda x: "กรุงเทพมหานคร" if x == "จังหวัดกรุงเทพมหานคร" else x)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 3458, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 3363, in get_loc
+    raise KeyError(key) from err
+KeyError: 'province'
+[2023-05-16T07:11:09.253+0000] {taskinstance.py:1373} INFO - Marking task as FAILED. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230514T000000, start_date=20230516T071108, end_date=20230516T071109
+[2023-05-16T07:11:09.292+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 30 for task clean_fondue_data ('province'; 704)
+[2023-05-16T07:11:09.330+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
+[2023-05-16T07:11:09.376+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
