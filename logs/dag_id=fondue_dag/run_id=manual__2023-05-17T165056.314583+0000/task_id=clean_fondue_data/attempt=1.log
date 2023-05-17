@@ -1,0 +1,14 @@
+[2023-05-17T16:51:07.931+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data manual__2023-05-17T16:50:56.314583+00:00 [queued]>
+[2023-05-17T16:51:07.943+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data manual__2023-05-17T16:50:56.314583+00:00 [queued]>
+[2023-05-17T16:51:07.944+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T16:51:07.960+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-17 16:50:56.314583+00:00
+[2023-05-17T16:51:07.967+0000] {standard_task_runner.py:57} INFO - Started process 3104 to run task
+[2023-05-17T16:51:07.971+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'manual__2023-05-17T16:50:56.314583+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpqwf7n_p2']
+[2023-05-17T16:51:07.973+0000] {standard_task_runner.py:85} INFO - Job 50: Subtask clean_fondue_data
+[2023-05-17T16:51:08.022+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data manual__2023-05-17T16:50:56.314583+00:00 [running]> on host 8cf8fb9e28f7
+[2023-05-17T16:51:08.108+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-17T16:50:56.314583+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-05-17T16:50:56.314583+00:00'
+[2023-05-17T16:51:08.176+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-17T16:51:08.209+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T16:51:08.221+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230517T165056, start_date=20230517T165107, end_date=20230517T165108
+[2023-05-17T16:51:08.263+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T16:51:08.293+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check

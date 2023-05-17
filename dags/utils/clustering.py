@@ -26,7 +26,7 @@ def kmean_cluster(ti, **context) :
 
     cluster_data = scaler.fit_transform(x)
 
-    n_clusters = 2
+    n_clusters = 6
 
     kmeans = KMeans(n_clusters=n_clusters, random_state=2020)
     kmeans.fit(cluster_data)

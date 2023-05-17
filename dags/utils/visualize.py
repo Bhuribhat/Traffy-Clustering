@@ -15,14 +15,7 @@ import folium
 # size factor
 factor = 3
 
-# color procedure
-def color_producer(state):
-    if state == 'กำลังดำเนินการ':
-        return 'blue'
-    elif state == 'รอรับเรื่อง':
-        return 'red'
-    else:
-        return 'green'
+
 
 def compare_count_plot(data, column, title):
     # create a new font with Thai support
@@ -111,19 +104,87 @@ def visualize_data(ti, **context) :
     ax2.scatter(cluster_data[:, 0], cluster_data[:, 1], cmap='rainbow')
     plt.savefig('/opt/airflow/outputs/clustered_data.png')
 
-    #---------- Geospatial visualization Traffy By State ----------#
-    # TODO: folium map of Traffy By State
+    #---------- Geospatial visualization Clustered Traffy ----------#
+    # Get the cluster labels and their counts
+    cluster_counts = df['cluster_label'].value_counts()
 
-    # Save traffy_map to html file
-    # traffy_map.save("/opt/airflow/outputs/Map_by_State.html")
+    # Generate a color palette based on the number of clusters
+    n_clusters = len(cluster_counts)
+    palette = sns.color_palette("viridis", n_clusters)
 
-    #---------- Geospatial visualization Traffy By Size ----------#
-    # TODO: folium map of Traffy By Size
+    # Color procedure
+    def color_producer(cluster_label):
+        return hex_colors[int(cluster_label)]
 
-    # Save traffy_map to html file
-    # traffy_map.save("/opt/airflow/outputs/Map_by_Size.html")
+    def rgb_to_hex(rgb):
+        r, g, b = rgb
+        return '#{:02x}{:02x}{:02x}'.format(int(r*255), int(g*255), int(b*255))
 
-    #---------- Geospatial visualization Low Income Heatmap ----------#
+    # Create a color dictionary mapping cluster labels to colors
+    color_dict = dict(zip(cluster_counts.index, palette * 255))
+    hex_colors = {k: rgb_to_hex(v) for k, v in color_dict.items()}
+
+    def plot_cluster_by_problems(base_map):
+        # Add Checkbox for filtering
+        process_group  = folium.FeatureGroup(name="Ongoing").add_to(base_map)
+        waiting_group  = folium.FeatureGroup(name="Upcoming").add_to(base_map)
+        finished_group = folium.FeatureGroup(name="Complete").add_to(base_map)
+
+        # Loop through the rows of the dataframe and add a marker for each location
+        for index, row in df.iterrows():
+            lat = float(row['latitude'])
+            lon = float(row['longitude'])
+            label = int(row['cluster_label'])
+
+            # Pop up information
+            information = f"<b>Problem Type: {row['type']}</b><br><br>Cluster: {label}<br>Province: {row['province']}"
+            # information += f"<br>District: {row['district']}<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
+
+            iframe = folium.IFrame(information)
+            popup = folium.Popup(iframe, min_width=300, max_width=300, min_height=140, max_height=170)
+
+            # Add Group for filtering state
+            if row['state'] == 'กำลังดำเนินการ':
+                process_group.add_child(
+                    folium.CircleMarker(
+                        location=[lon, lat],
+                        popup=popup,
+                        tooltip=row['cluster_label'],
+                        fill=True,
+                        fill_color=color_producer(label),
+                        color='black',
+                        fill_opacity=0.7
+                    )
+                )
+            elif row['state'] == 'รอรับเรื่อง':
+                waiting_group.add_child(
+                    folium.CircleMarker(
+                        location=[lon, lat],
+                        popup=popup,
+                        tooltip=row['cluster_label'],
+                        fill=True,
+                        fill_color=color_producer(label),
+                        color='black',
+                        fill_opacity=0.7
+                    )
+                )
+            else:
+                finished_group.add_child(
+                    folium.CircleMarker(
+                        location=[lon, lat],
+                        popup=popup,
+                        tooltip=row['cluster_label'],
+                        fill=True,
+                        fill_color=color_producer(label),
+                        color='black',
+                        fill_opacity=0.7
+                    )
+                )
+
+        # Add control layer
+        folium.LayerControl().add_to(base_map)
+
+    #---------- Geospatial visualization With Low Income Heatmap ----------#
     from folium.plugins import HeatMap
 
     broke_df = load_files(['low_income'])[0]
@@ -137,9 +198,12 @@ def visualize_data(ti, **context) :
     # List comprehension to make out list of lists
     heat_data = [[row['Lat'], row['Long']] for index, row in heat_df.iterrows()]
 
-    broke_map = folium.Map(location=[13.7563, 100.5668], zoom_start=12)
-    folium.TileLayer('cartodbdark_matter').add_to(broke_map)
+    broke_map = folium.Map(location=[13.7563, 100.5668], tiles="cartodbdark_matter", zoom_start=12)
+    heatmap_group = folium.FeatureGroup(name="Heatmap").add_to(broke_map)
+    heatmap_group.add_child(
+        HeatMap(heat_data, radius=13, blur=15,)
+    )
 
-    # Display heatmap
-    HeatMap(heat_data, radius=13, blur=15,).add_to(broke_map)
-    broke_map.save("/opt/airflow/outputs/Low_Income_Heatmap.html")
+    plot_cluster_by_problems(broke_map)
+
+    broke_map.save("/opt/airflow/outputs/Result_Map.html")
