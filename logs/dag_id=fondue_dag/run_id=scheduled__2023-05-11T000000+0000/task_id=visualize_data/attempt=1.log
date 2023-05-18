@@ -234,3 +234,24 @@ OSError: [Errno 99] Cannot assign requested address
 [2023-05-18T04:23:23.487+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 46 for task visualize_data (list index out of range; 967)
 [2023-05-18T04:23:23.527+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
 [2023-05-18T04:23:23.547+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-18T07:20:56.365+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data permission to 509
+[2023-05-18T07:20:56.369+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data'
+[2023-05-18T07:20:56.474+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data permission to 509
+[2023-05-18T07:20:56.477+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data'
+[2023-05-18T07:20:56.529+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-11T00:00:00+00:00 [queued]>
+[2023-05-18T07:20:56.556+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-11T00:00:00+00:00 [queued]>
+[2023-05-18T07:20:56.559+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-18T07:20:56.595+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): visualize_data> on 2023-05-11 00:00:00+00:00
+[2023-05-18T07:20:56.612+0000] {standard_task_runner.py:57} INFO - Started process 1095 to run task
+[2023-05-18T07:20:56.624+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'visualize_data', 'scheduled__2023-05-11T00:00:00+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpk9oqesim']
+[2023-05-18T07:20:56.627+0000] {standard_task_runner.py:85} INFO - Job 47: Subtask visualize_data
+[2023-05-18T07:20:56.789+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data permission to 509
+[2023-05-18T07:20:56.792+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-11T00:00:00+00:00/task_id=visualize_data'
+[2023-05-18T07:20:56.809+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.visualize_data scheduled__2023-05-11T00:00:00+00:00 [running]> on host e6cb8527e075
+[2023-05-18T07:20:57.101+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='visualize_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-11T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-11T00:00:00+00:00'
+[2023-05-18T07:21:04.586+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-18T07:21:04.606+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-18T07:21:17.823+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-18T07:21:17.844+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=visualize_data, execution_date=20230511T000000, start_date=20230518T072056, end_date=20230518T072117
+[2023-05-18T07:21:17.900+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-18T07:21:17.922+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check

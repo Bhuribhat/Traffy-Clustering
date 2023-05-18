@@ -26,3 +26,17 @@
 [2023-05-18T04:21:58.499+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=is_api_active, execution_date=20230509T000000, start_date=20230518T042149, end_date=20230518T042158
 [2023-05-18T04:21:58.595+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
 [2023-05-18T04:21:58.636+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-18T07:19:22.308+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.is_api_active scheduled__2023-05-09T00:00:00+00:00 [queued]>
+[2023-05-18T07:19:22.328+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.is_api_active scheduled__2023-05-09T00:00:00+00:00 [queued]>
+[2023-05-18T07:19:22.329+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-18T07:19:22.354+0000] {taskinstance.py:1350} INFO - Executing <Task(HttpSensor): is_api_active> on 2023-05-09 00:00:00+00:00
+[2023-05-18T07:19:22.372+0000] {standard_task_runner.py:57} INFO - Started process 323 to run task
+[2023-05-18T07:19:22.377+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'is_api_active', 'scheduled__2023-05-09T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpjd23i6eg']
+[2023-05-18T07:19:22.383+0000] {standard_task_runner.py:85} INFO - Job 8: Subtask is_api_active
+[2023-05-18T07:19:22.500+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.is_api_active scheduled__2023-05-09T00:00:00+00:00 [running]> on host e6cb8527e075
+[2023-05-18T07:19:22.664+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='is_api_active' AIRFLOW_CTX_EXECUTION_DATE='2023-05-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-09T00:00:00+00:00'
+[2023-05-18T07:19:22.667+0000] {http.py:122} INFO - Poking: https://publicapi.traffy.in.th/share/teamchadchart/search
+[2023-05-18T07:19:32.711+0000] {base.py:255} INFO - Success criteria met. Exiting.
+[2023-05-18T07:19:32.724+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=is_api_active, execution_date=20230509T000000, start_date=20230518T071922, end_date=20230518T071932
+[2023-05-18T07:19:32.806+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-18T07:19:32.871+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
