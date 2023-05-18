@@ -1,7 +1,9 @@
 from sklearn.cluster import KMeans
+from scipy.spatial.distance import cdist
 from sklearn.preprocessing import StandardScaler
-from utils.files_util import save_files, load_files
+from tasks.files_util import save_files, load_files
 import pandas as pd
+import numpy as np
 from matplotlib import pyplot as plt
 plt.style.use('ggplot')
 
@@ -31,6 +33,10 @@ def kmean_cluster(ti, **context) :
     kmeans = KMeans(n_clusters=n_clusters, random_state=2020)
     kmeans.fit(cluster_data)
 
+    summation = sum(np.min(cdist(cluster_data, kmeans.cluster_centers_, 'euclidean'), axis=1))
+    meandistortion = summation / cluster_data.shape[0]
+    
+
     df['cluster_label'] = kmeans.labels_
     df.name = 'clustered_fondue'
     save_files([df])
@@ -40,8 +46,11 @@ def kmean_cluster(ti, **context) :
     with mlflow.start_run() as run:
         mlflow.log_param('n_clusters', n_clusters)
         mlflow.log_metric('inertia', kmeans.inertia_)
+        mlflow.log_metric('meandistortions', meandistortion)
+
         mlflow.sklearn.log_model(kmeans, 'model')
 
+        
 if __name__ == '__main__':
     kmean_cluster(0)
 

@@ -12,6 +12,92 @@
 [2023-05-17T16:46:14.247+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230513T000000, start_date=20230517T164613, end_date=20230517T164614
 [2023-05-17T16:46:14.278+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
 [2023-05-17T16:46:14.310+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+<<<<<<< HEAD
+[2023-05-17T17:55:02.133+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-17T17:55:02.148+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-17T17:55:02.149+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T17:55:02.181+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-13 00:00:00+00:00
+[2023-05-17T17:55:02.191+0000] {standard_task_runner.py:57} INFO - Started process 711 to run task
+[2023-05-17T17:55:02.194+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpzt6ac4wj']
+[2023-05-17T17:55:02.197+0000] {standard_task_runner.py:85} INFO - Job 27: Subtask clean_fondue_data
+[2023-05-17T17:55:02.280+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host a37c7bc3731c
+[2023-05-17T17:55:02.477+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-17T17:55:02.587+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-17T17:55:02.648+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T17:55:02.667+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230513T000000, start_date=20230517T175502, end_date=20230517T175502
+[2023-05-17T17:55:02.730+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T17:55:02.798+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-17T18:18:11.277+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-17T18:18:11.302+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-17T18:18:11.303+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T18:18:11.555+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-13 00:00:00+00:00
+[2023-05-17T18:18:11.570+0000] {standard_task_runner.py:57} INFO - Started process 844 to run task
+[2023-05-17T18:18:11.580+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpur4fv3f7']
+[2023-05-17T18:18:11.592+0000] {standard_task_runner.py:85} INFO - Job 25: Subtask clean_fondue_data
+[2023-05-17T18:18:12.167+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host 3390ff13fbf6
+[2023-05-17T18:18:12.667+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-17T18:18:12.750+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-17T18:18:13.163+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T18:18:13.177+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230513T000000, start_date=20230517T181811, end_date=20230517T181813
+[2023-05-17T18:18:13.880+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T18:18:13.920+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-17T18:25:49.201+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-17T18:25:49.221+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-17T18:25:49.222+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T18:25:49.247+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-13 00:00:00+00:00
+[2023-05-17T18:25:49.256+0000] {standard_task_runner.py:57} INFO - Started process 974 to run task
+[2023-05-17T18:25:49.261+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpgozgi1_j']
+[2023-05-17T18:25:49.265+0000] {standard_task_runner.py:85} INFO - Job 27: Subtask clean_fondue_data
+[2023-05-17T18:25:49.348+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host 70fcd41af239
+[2023-05-17T18:25:49.520+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-17T18:25:49.769+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-17T18:25:49.837+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T18:25:49.852+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230513T000000, start_date=20230517T182549, end_date=20230517T182549
+[2023-05-17T18:25:49.941+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T18:25:49.988+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-17T18:37:32.914+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-17T18:37:32.940+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-17T18:37:32.941+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T18:37:32.976+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-13 00:00:00+00:00
+[2023-05-17T18:37:32.990+0000] {standard_task_runner.py:57} INFO - Started process 1588 to run task
+[2023-05-17T18:37:32.995+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmp8calzrb5']
+[2023-05-17T18:37:32.998+0000] {standard_task_runner.py:85} INFO - Job 36: Subtask clean_fondue_data
+[2023-05-17T18:37:33.137+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host 1545bed90dab
+[2023-05-17T18:37:33.330+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-17T18:37:33.441+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-17T18:37:33.503+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T18:37:33.521+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230513T000000, start_date=20230517T183732, end_date=20230517T183733
+[2023-05-17T18:37:33.611+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T18:37:33.664+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-18T06:41:12.796+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-18T06:41:12.818+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-18T06:41:12.819+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-18T06:41:12.849+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-13 00:00:00+00:00
+[2023-05-18T06:41:12.860+0000] {standard_task_runner.py:57} INFO - Started process 1209 to run task
+[2023-05-18T06:41:12.865+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmp6dhg537d']
+[2023-05-18T06:41:12.868+0000] {standard_task_runner.py:85} INFO - Job 30: Subtask clean_fondue_data
+[2023-05-18T06:41:12.973+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host 714a0c7ad307
+[2023-05-18T06:41:13.246+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-18T06:41:13.361+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-18T06:41:13.431+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-18T06:41:13.449+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230513T000000, start_date=20230518T064112, end_date=20230518T064113
+[2023-05-18T06:41:13.519+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-18T06:41:13.702+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-18T06:53:23.235+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-18T06:53:23.253+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
+[2023-05-18T06:53:23.254+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-18T06:53:23.285+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-13 00:00:00+00:00
+[2023-05-18T06:53:23.297+0000] {standard_task_runner.py:57} INFO - Started process 1243 to run task
+[2023-05-18T06:53:23.302+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-13T00:00:00+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpr78pw8rg']
+[2023-05-18T06:53:23.306+0000] {standard_task_runner.py:85} INFO - Job 32: Subtask clean_fondue_data
+[2023-05-18T06:53:23.399+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [running]> on host 26547302378e
+[2023-05-18T06:53:23.541+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-13T00:00:00+00:00'
+[2023-05-18T06:53:23.658+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-18T06:53:23.729+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-18T06:53:23.745+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230513T000000, start_date=20230518T065323, end_date=20230518T065323
+[2023-05-18T06:53:23.796+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-18T06:53:23.882+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+=======
 [2023-05-18T04:22:15.469+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
 [2023-05-18T04:22:15.522+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-13T00:00:00+00:00 [queued]>
 [2023-05-18T04:22:15.527+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
@@ -26,3 +112,4 @@
 [2023-05-18T04:22:16.263+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230513T000000, start_date=20230518T042215, end_date=20230518T042216
 [2023-05-18T04:22:16.357+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
 [2023-05-18T04:22:16.430+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+>>>>>>> 8e4a41b368593e9ce283ae02afd6c27252f67370

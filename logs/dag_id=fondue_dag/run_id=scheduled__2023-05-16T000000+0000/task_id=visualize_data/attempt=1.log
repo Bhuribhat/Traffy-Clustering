@@ -146,6 +146,98 @@ OSError: [Errno 99] Cannot assign requested address
 [2023-05-17T16:46:44.398+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 41 for task visualize_data ('district'; 2387)
 [2023-05-17T16:46:44.438+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
 [2023-05-17T16:46:44.464+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+<<<<<<< HEAD
+[2023-05-17T17:55:40.749+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-17T17:55:40.770+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-17T17:55:40.771+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T17:55:40.798+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): visualize_data> on 2023-05-16 00:00:00+00:00
+[2023-05-17T17:55:40.811+0000] {standard_task_runner.py:57} INFO - Started process 2192 to run task
+[2023-05-17T17:55:40.815+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'visualize_data', 'scheduled__2023-05-16T00:00:00+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmp8z7y5upx']
+[2023-05-17T17:55:40.818+0000] {standard_task_runner.py:85} INFO - Job 45: Subtask visualize_data
+[2023-05-17T17:55:40.891+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [running]> on host a37c7bc3731c
+[2023-05-17T17:55:41.026+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='visualize_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-16T00:00:00+00:00'
+[2023-05-17T17:55:41.466+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-17T17:55:41.492+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-17T17:55:48.719+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T17:55:48.736+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=visualize_data, execution_date=20230516T000000, start_date=20230517T175540, end_date=20230517T175548
+[2023-05-17T17:55:48.785+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T17:55:48.812+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-17T18:19:09.419+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-17T18:19:09.455+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-17T18:19:09.458+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T18:19:09.561+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): visualize_data> on 2023-05-16 00:00:00+00:00
+[2023-05-17T18:19:09.596+0000] {standard_task_runner.py:57} INFO - Started process 2383 to run task
+[2023-05-17T18:19:09.604+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'visualize_data', 'scheduled__2023-05-16T00:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpmzekw5ps']
+[2023-05-17T18:19:09.620+0000] {standard_task_runner.py:85} INFO - Job 44: Subtask visualize_data
+[2023-05-17T18:19:09.903+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [running]> on host 3390ff13fbf6
+[2023-05-17T18:19:10.463+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='visualize_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-16T00:00:00+00:00'
+[2023-05-17T18:19:11.017+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-17T18:19:11.049+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-17T18:19:35.134+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T18:19:35.151+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=visualize_data, execution_date=20230516T000000, start_date=20230517T181909, end_date=20230517T181935
+[2023-05-17T18:19:35.413+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T18:19:35.434+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-17T18:26:03.696+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-17T18:26:03.755+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-17T18:26:03.761+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T18:26:03.869+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): visualize_data> on 2023-05-16 00:00:00+00:00
+[2023-05-17T18:26:03.904+0000] {standard_task_runner.py:57} INFO - Started process 1766 to run task
+[2023-05-17T18:26:03.967+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'visualize_data', 'scheduled__2023-05-16T00:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpa_x_nt_2']
+[2023-05-17T18:26:03.974+0000] {standard_task_runner.py:85} INFO - Job 39: Subtask visualize_data
+[2023-05-17T18:26:04.118+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [running]> on host 70fcd41af239
+[2023-05-17T18:26:04.326+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='visualize_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-16T00:00:00+00:00'
+[2023-05-17T18:26:04.955+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-17T18:26:04.980+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-17T18:26:15.999+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T18:26:16.012+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=visualize_data, execution_date=20230516T000000, start_date=20230517T182603, end_date=20230517T182616
+[2023-05-17T18:26:16.053+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T18:26:16.214+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-17T18:37:36.482+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-17T18:37:36.501+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-17T18:37:36.512+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-17T18:37:36.601+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): visualize_data> on 2023-05-16 00:00:00+00:00
+[2023-05-17T18:37:36.613+0000] {standard_task_runner.py:57} INFO - Started process 1804 to run task
+[2023-05-17T18:37:36.616+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'visualize_data', 'scheduled__2023-05-16T00:00:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmph2yof2_3']
+[2023-05-17T18:37:36.619+0000] {standard_task_runner.py:85} INFO - Job 40: Subtask visualize_data
+[2023-05-17T18:37:36.745+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [running]> on host 1545bed90dab
+[2023-05-17T18:37:36.971+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='visualize_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-16T00:00:00+00:00'
+[2023-05-17T18:37:37.212+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-17T18:37:37.242+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-17T18:37:45.599+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-17T18:37:45.614+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=visualize_data, execution_date=20230516T000000, start_date=20230517T183736, end_date=20230517T183745
+[2023-05-17T18:37:45.668+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-17T18:37:45.690+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-18T06:47:34.383+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-18T06:47:34.422+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-18T06:47:34.423+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-18T06:47:34.464+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): visualize_data> on 2023-05-16 00:00:00+00:00
+[2023-05-18T06:47:34.476+0000] {standard_task_runner.py:57} INFO - Started process 4853 to run task
+[2023-05-18T06:47:34.481+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'visualize_data', 'scheduled__2023-05-16T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmp61ev55aa']
+[2023-05-18T06:47:34.484+0000] {standard_task_runner.py:85} INFO - Job 61: Subtask visualize_data
+[2023-05-18T06:47:34.572+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [running]> on host 714a0c7ad307
+[2023-05-18T06:47:34.756+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='visualize_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-16T00:00:00+00:00'
+[2023-05-18T06:47:35.123+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-18T06:47:35.153+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-18T06:47:45.862+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-18T06:47:45.883+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=visualize_data, execution_date=20230516T000000, start_date=20230518T064734, end_date=20230518T064745
+[2023-05-18T06:47:45.969+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-18T06:47:46.064+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-18T06:53:32.524+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-18T06:53:32.567+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [queued]>
+[2023-05-18T06:53:32.567+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-18T06:53:32.622+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): visualize_data> on 2023-05-16 00:00:00+00:00
+[2023-05-18T06:53:32.631+0000] {standard_task_runner.py:57} INFO - Started process 1656 to run task
+[2023-05-18T06:53:32.645+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'visualize_data', 'scheduled__2023-05-16T00:00:00+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpr002ethd']
+[2023-05-18T06:53:32.650+0000] {standard_task_runner.py:85} INFO - Job 42: Subtask visualize_data
+[2023-05-18T06:53:32.765+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.visualize_data scheduled__2023-05-16T00:00:00+00:00 [running]> on host 26547302378e
+[2023-05-18T06:53:33.003+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='visualize_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-16T00:00:00+00:00'
+[2023-05-18T06:53:33.675+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-18T06:53:33.699+0000] {font_manager.py:1352} WARNING - findfont: Font family ['TH Sarabun Chula'] not found. Falling back to DejaVu Sans.
+[2023-05-18T06:53:53.677+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-18T06:53:53.709+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=visualize_data, execution_date=20230516T000000, start_date=20230518T065332, end_date=20230518T065353
+[2023-05-18T06:53:53.792+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-18T06:53:53.960+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+=======
 [2023-05-18T04:23:22.743+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-16T00:00:00+00:00/task_id=visualize_data permission to 509
 [2023-05-18T04:23:22.745+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-16T00:00:00+00:00/task_id=visualize_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-16T00:00:00+00:00/task_id=visualize_data'
 [2023-05-18T04:23:22.824+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-16T00:00:00+00:00/task_id=visualize_data permission to 509
@@ -249,3 +341,4 @@ OSError: [Errno 99] Cannot assign requested address
 [2023-05-18T04:23:23.531+0000] {standard_task_runner.py:109} ERROR - Failed to execute job 47 for task visualize_data (list index out of range; 968)
 [2023-05-18T04:23:23.571+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 1
 [2023-05-18T04:23:23.594+0000] {taskinstance.py:2674} INFO - 0 downstream tasks scheduled from follow-on schedule check
+>>>>>>> 8e4a41b368593e9ce283ae02afd6c27252f67370
