@@ -55,7 +55,7 @@ def compare_pie_plot(data, column, title):
     colors[0] = 'dodgerblue'
 
     # plot pie chart
-    plt.figure(figsize=(12, 8))
+    plt.figure(figsize=(8, 6))
     patches, texts, pcts = plt.pie(
         type_counts, labels=type_counts.index,
         explode=[0.05, 0, 0], autopct='%1.1f%%', colors=colors,
@@ -74,7 +74,120 @@ def compare_pie_plot(data, column, title):
     plt.savefig(f'/opt/airflow/outputs/compare_pie_plot_{title}.png')
 
 
+# TODO replace df with clean df
+def geospatial_visualize():
+    df = load_files(['teamchadchart'])[0]
+
+    # color procedure
+    def color_producer(count):
+        if count == 1:
+            return 'green'
+        elif count == 2:
+            return 'blue'
+        elif count == 3:
+            return 'orange'
+        else:
+            return 'red'
+
+    # Create a base map centered on a Thailand location
+    traffy_map = folium.Map(location=[13.7563, 100.5018], tiles="Stamen Terrain", zoom_start=12)
+
+    # Add Checkbox for filtering
+    group_1 = folium.FeatureGroup(name="Type Count 1").add_to(traffy_map)
+    group_2 = folium.FeatureGroup(name="Type Count 2").add_to(traffy_map)
+    group_3 = folium.FeatureGroup(name="Type Count 3").add_to(traffy_map)
+    group_4 = folium.FeatureGroup(name="Type Count 4").add_to(traffy_map)
+    group_5 = folium.FeatureGroup(name="Type Count 5").add_to(traffy_map)
+
+    # Loop through the rows of the dataframe and add a marker for each location
+    for index, row in df.iterrows():
+        lat = float(row['latitude'])
+        lon = float(row['longitude'])
+        count = int(row['type_count'])
+
+        # Pop up information
+        information = f"<b>Problem Count: {count}<b><br><br>Province: {row['province']}<br>District: {row['district']}"
+        information += f"<br>State: {row['state']}<br>Problem: {row['type']}<br>Timestamp: {row['timestamp']}"
+
+        iframe = folium.IFrame(information)
+        popup = folium.Popup(iframe, min_width=300, max_width=300, min_height=150, max_height=180)
+
+        # Add Group for filtering count
+        if count == 1:
+            group_1.add_child(
+                folium.CircleMarker(
+                    location=[lon, lat],
+                    radius=count * factor,
+                    popup=popup,
+                    tooltip=row['district'],
+                    fill=True,
+                    fill_color=color_producer(count),
+                    color='black',
+                    fill_opacity=0.7
+                )
+            )
+        elif count == 2:
+            group_2.add_child(
+                folium.CircleMarker(
+                    location=[lon, lat],
+                    radius=count * factor,
+                    popup=popup,
+                    tooltip=row['district'],
+                    fill=True,
+                    fill_color=color_producer(count),
+                    color='black',
+                    fill_opacity=0.7
+                )
+            )
+        elif count == 3:
+            group_3.add_child(
+                folium.CircleMarker(
+                    location=[lon, lat],
+                    radius=count * factor,
+                    popup=popup,
+                    tooltip=row['district'],
+                    fill=True,
+                    fill_color=color_producer(count),
+                    color='black',
+                    fill_opacity=0.7
+                )
+            )
+        elif count == 4:
+            group_4.add_child(
+                folium.CircleMarker(
+                    location=[lon, lat],
+                    radius=count * factor,
+                    popup=popup,
+                    tooltip=row['district'],
+                    fill=True,
+                    fill_color=color_producer(count),
+                    color='black',
+                    fill_opacity=0.7
+                )
+            )
+        else:
+            group_5.add_child(
+                folium.CircleMarker(
+                    location=[lon, lat],
+                    radius=count * factor,
+                    popup=popup,
+                    tooltip=row['district'],
+                    fill=True,
+                    fill_color=color_producer(count),
+                    color='black',
+                    fill_opacity=0.7
+                )
+            )
+
+    # Add control layer
+    folium.LayerControl().add_to(traffy_map)
+
+    # Save traffy_map to html file
+    traffy_map.save("/opt/airflow/outputs/Map_by_Size.html")
+
+
 def visualize_data(ti, **context) :
+    geospatial_visualize()
     df = load_files(['clustered_fondue'])[0]
     selected = ['latitude', 'longitude']
     df_describe = df[selected]
@@ -137,9 +250,9 @@ def visualize_data(ti, **context) :
             label = int(row['cluster_label'])
 
             # Pop up information
-            # information += f"<br>District: {row['district']}<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
             information = f"<b>Problem Type: {row['type']}</b><br><br>Cluster: {label}<br>Province: {row['province']}"
-            information += f"<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
+            information += f"<br>District: {row['district']}<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
+            # information += f"<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
 
             iframe = folium.IFrame(information)
             popup = folium.Popup(iframe, min_width=300, max_width=300, min_height=140, max_height=170)
