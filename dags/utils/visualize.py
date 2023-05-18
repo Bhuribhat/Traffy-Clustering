@@ -200,9 +200,9 @@ def visualize_data(ti, **context) :
     cluster_data = scaler.fit_transform(x)
 
     #---------- Visualize dataset ----------#
-    compare_count_plot(df, 'type', 'Number of Issues by Type')
-    compare_count_plot(df, 'district', 'District')
-    compare_count_plot(df, 'state', 'Problems Count')
+    # compare_count_plot(df, 'type', 'Number of Issues by Type')
+    # compare_count_plot(df, 'district', 'District')
+    # compare_count_plot(df, 'state', 'Problems Count')
 
     # TODO : Aggregate data by state, district, provice, to show type counts
 
