@@ -68,3 +68,15 @@ The default account has the login __airflow__ and the password __airflow__.
 ```bash
 >> docker-compose down -v
 ```
+
+# Interactive Dashboard
+
+The webserver is available at: `http://localhost:8501`  
+
+```bash
+>> streamlit run streamlit_app.py
+```
+
+<p align="left">
+    <img src="./assets/dashboard1.png" height="400" />
+</p>

@@ -29,8 +29,10 @@ def clean_data(ti, **context):
   # rename province in Bangkok
   df['province'] = df['province'].apply(lambda x: "กรุงเทพมหานคร" if x == "จังหวัดกรุงเทพมหานคร" else x)
 
+  df['district'] = df['address'].str.split(' ').str[-4]
+
   # split 'type' in each row to list datatype
-  df['type'] = df['problem_type_abdul'].apply(lambda x: x.strip('\"[]').split(', '))
+  df['type'] = df['problem_type_abdul'].apply(lambda x: x.strip('\"[]').replace("\'", "").split(", "))
 
   # add new column to count 'type' length
   df['type_count'] = df['type'].apply(lambda x: len(x))
@@ -66,5 +68,6 @@ def clean_data(ti, **context):
     print("error lol")
   finally:
     df_exploded.name = "cleaned_fondue"
-    save_files([df_exploded])
+    df.name = "data_cleaned_by_length"
+    save_files([df_exploded, df])
 
