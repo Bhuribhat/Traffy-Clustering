@@ -14,7 +14,7 @@ We will be using Python and popular data science libraries such as Pandas, Sciki
 
 Once we have identified the clusters, we will use visualization techniques to explore the relationships between the clusters. The goal is to uncover interesting patterns and insights about traffic in Thailand that could be used to inform policy decisions.  
 
-By the end of this project, we will have gained experience in applying clustering techniques to real-world datasets, using data visualization tools to communicate insights effectively, and working with common data science libraries in Python. We hope that our findings will contribute to a better understanding of traffic patterns in Thailand and inspire further research in this area.
+By the end of this project, we will have gained experience in applying clustering techniques to real-world datasets, using data visualization tools to communicate insights effectively, and working with common data science libraries in Python. We hope that our findings will contribute to a better understanding of low-income area in Thailand and inspire further research in this area.
 
 
 ## Initializing Environment
@@ -69,14 +69,35 @@ The default account has the login __airflow__ and the password __airflow__.
 >> docker-compose down -v
 ```
 
+
+## MLflow UI
+
+The webserver is available at: `http://localhost:6543`  
+
+```bash
+>> mlflow ui --port 6543
+```
+
+
 # Interactive Dashboard
 
 The webserver is available at: `http://localhost:8501`  
 
 ```bash
->> streamlit run streamlit_app.py
+>> streamlit run streamlit_app.py   # run streamlit
+>> Ctrl + C                         # close streamlit
 ```
 
 <p align="left">
     <img src="./assets/dashboard1.png" height="400" />
+</p>
+
+
+## Interesting Insight
+
+- low-income heatmap  
+- filter by road, sidewalk, and ditch
+
+<p align="left">
+    <img src="./assets/result.png" height="400" />
 </p>
