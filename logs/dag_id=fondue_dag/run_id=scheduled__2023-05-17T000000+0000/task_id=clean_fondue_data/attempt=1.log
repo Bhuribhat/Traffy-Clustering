@@ -43,3 +43,43 @@
 [2023-05-18T04:22:16.734+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
 [2023-05-18T04:22:16.783+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
 >>>>>>> 8e4a41b368593e9ce283ae02afd6c27252f67370
+[2023-05-18T07:20:31.849+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509
+[2023-05-18T07:20:31.851+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data'
+[2023-05-18T07:20:31.925+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509
+[2023-05-18T07:20:31.935+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data'
+[2023-05-18T07:20:31.993+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-17T00:00:00+00:00 [queued]>
+[2023-05-18T07:20:32.015+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-17T00:00:00+00:00 [queued]>
+[2023-05-18T07:20:32.016+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-18T07:20:32.039+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-17 00:00:00+00:00
+[2023-05-18T07:20:32.048+0000] {standard_task_runner.py:57} INFO - Started process 865 to run task
+[2023-05-18T07:20:32.052+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-17T00:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmp5pxppkzx']
+[2023-05-18T07:20:32.055+0000] {standard_task_runner.py:85} INFO - Job 26: Subtask clean_fondue_data
+[2023-05-18T07:20:32.122+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509
+[2023-05-18T07:20:32.123+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data'
+[2023-05-18T07:20:32.128+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-17T00:00:00+00:00 [running]> on host 0a50b96f7e57
+[2023-05-18T07:20:32.311+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-17T00:00:00+00:00'
+[2023-05-18T07:20:32.428+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-18T07:20:32.554+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-18T07:20:32.571+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230517T000000, start_date=20230518T072031, end_date=20230518T072032
+[2023-05-18T07:20:32.628+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-18T07:20:32.684+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-05-18T07:38:27.857+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509
+[2023-05-18T07:38:27.859+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data'
+[2023-05-18T07:38:27.907+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509
+[2023-05-18T07:38:27.908+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data'
+[2023-05-18T07:38:27.965+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-17T00:00:00+00:00 [queued]>
+[2023-05-18T07:38:27.985+0000] {taskinstance.py:1125} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-17T00:00:00+00:00 [queued]>
+[2023-05-18T07:38:27.987+0000] {taskinstance.py:1331} INFO - Starting attempt 1 of 2
+[2023-05-18T07:38:28.019+0000] {taskinstance.py:1350} INFO - Executing <Task(PythonOperator): clean_fondue_data> on 2023-05-17 00:00:00+00:00
+[2023-05-18T07:38:28.030+0000] {standard_task_runner.py:57} INFO - Started process 890 to run task
+[2023-05-18T07:38:28.049+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'fondue_dag', 'clean_fondue_data', 'scheduled__2023-05-17T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/fondue_dag.py', '--cfg-path', '/tmp/tmpgjj9akps']
+[2023-05-18T07:38:28.057+0000] {standard_task_runner.py:85} INFO - Job 27: Subtask clean_fondue_data
+[2023-05-18T07:38:28.145+0000] {logging_mixin.py:149} INFO - Changing /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509
+[2023-05-18T07:38:28.146+0000] {logging_mixin.py:149} INFO - Failed to change /opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=fondue_dag/run_id=scheduled__2023-05-17T00:00:00+00:00/task_id=clean_fondue_data'
+[2023-05-18T07:38:28.150+0000] {task_command.py:410} INFO - Running <TaskInstance: fondue_dag.clean_fondue_data scheduled__2023-05-17T00:00:00+00:00 [running]> on host 4fe746fadf66
+[2023-05-18T07:38:28.315+0000] {taskinstance.py:1570} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='Bhuribhat@gmail.com' AIRFLOW_CTX_DAG_OWNER='pras' AIRFLOW_CTX_DAG_ID='fondue_dag' AIRFLOW_CTX_TASK_ID='clean_fondue_data' AIRFLOW_CTX_EXECUTION_DATE='2023-05-17T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-05-17T00:00:00+00:00'
+[2023-05-18T07:38:28.454+0000] {logging_mixin.py:149} INFO - error lol
+[2023-05-18T07:38:28.583+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-05-18T07:38:28.603+0000] {taskinstance.py:1373} INFO - Marking task as SUCCESS. dag_id=fondue_dag, task_id=clean_fondue_data, execution_date=20230517T000000, start_date=20230518T073827, end_date=20230518T073828
+[2023-05-18T07:38:28.649+0000] {local_task_job_runner.py:232} INFO - Task exited with return code 0
+[2023-05-18T07:38:28.712+0000] {taskinstance.py:2674} INFO - 1 downstream tasks scheduled from follow-on schedule check

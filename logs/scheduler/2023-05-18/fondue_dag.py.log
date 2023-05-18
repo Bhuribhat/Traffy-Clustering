@@ -1815,3 +1815,671 @@
 [2023-05-18T04:52:14.241+0000] {logging_mixin.py:149} INFO - [2023-05-18T04:52:14.241+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
 [2023-05-18T04:52:14.276+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.127 seconds
 >>>>>>> 8e4a41b368593e9ce283ae02afd6c27252f67370
+[2023-05-18T07:16:50.734+0000] {processor.py:156} INFO - Started process (PID=164) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:16:50.736+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:16:50.738+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:16:50.738+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:16:56.944+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:16:56.943+0000] {font_manager.py:1443} INFO - generated new fontManager
+[2023-05-18T07:17:00.399+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:17:01.007+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:01.006+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:fondue_dag
+[2023-05-18T07:17:01.032+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:01.032+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:fondue_dag
+[2023-05-18T07:17:01.053+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:01.053+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:fondue_dag
+[2023-05-18T07:17:01.056+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:01.055+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:17:01.093+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:01.092+0000] {dag.py:2747} INFO - Creating ORM DAG for fondue_dag
+[2023-05-18T07:17:01.124+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:01.124+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:17:01.173+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 10.449 seconds
+[2023-05-18T07:17:31.338+0000] {processor.py:156} INFO - Started process (PID=201) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:17:31.340+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:17:31.342+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:31.342+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:17:38.052+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:17:38.133+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:38.132+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:17:38.213+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:17:38.212+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:17:38.286+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.954 seconds
+[2023-05-18T07:18:08.811+0000] {processor.py:156} INFO - Started process (PID=230) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:18:08.814+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:18:08.817+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:18:08.816+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:18:15.375+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:18:15.504+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:18:15.502+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:18:15.796+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:18:15.795+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:18:15.867+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 7.062 seconds
+[2023-05-18T07:18:46.278+0000] {processor.py:156} INFO - Started process (PID=258) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:18:46.281+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:18:46.283+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:18:46.283+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:18:53.120+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:18:53.196+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:18:53.191+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:18:53.274+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:18:53.274+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:18:53.357+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 7.085 seconds
+[2023-05-18T07:19:23.799+0000] {processor.py:156} INFO - Started process (PID=286) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:19:23.801+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:19:23.804+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:19:23.804+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:19:30.770+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:19:30.842+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:19:30.841+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:19:30.920+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:19:30.920+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:19:30.987+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 7.194 seconds
+[2023-05-18T07:20:01.308+0000] {processor.py:156} INFO - Started process (PID=321) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:20:01.311+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:20:01.314+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:20:01.314+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:20:07.404+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:20:07.468+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:20:07.467+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:20:07.532+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:20:07.531+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:20:07.583+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.291 seconds
+[2023-05-18T07:20:37.869+0000] {processor.py:156} INFO - Started process (PID=1053) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:20:37.871+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:20:37.872+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:20:37.872+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:20:46.333+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:20:46.398+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:20:46.397+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:20:46.486+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:20:46.486+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:20:46.716+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 8.852 seconds
+[2023-05-18T07:21:17.787+0000] {processor.py:156} INFO - Started process (PID=2078) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:21:17.801+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:21:17.821+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:21:17.820+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:21:28.229+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:21:28.426+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:21:28.425+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:21:42.926+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:21:42.926+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:22:05.613+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 47.833 seconds
+[2023-05-18T07:22:36.662+0000] {processor.py:156} INFO - Started process (PID=2762) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:22:36.665+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:22:36.668+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:22:36.667+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:22:43.315+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:22:43.588+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:22:43.384+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:22:43.678+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:22:43.678+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:22:43.748+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 7.093 seconds
+[2023-05-18T07:23:14.143+0000] {processor.py:156} INFO - Started process (PID=2850) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:23:14.145+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:23:14.149+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:23:14.148+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:23:20.346+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:23:20.598+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:23:20.597+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:23:20.677+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:23:20.676+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:23:20.736+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.600 seconds
+[2023-05-18T07:23:51.209+0000] {processor.py:156} INFO - Started process (PID=2878) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:23:51.212+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:23:51.215+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:23:51.214+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:23:57.583+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:23:57.658+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:23:57.657+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:23:57.747+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:23:57.747+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:23:57.818+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.617 seconds
+[2023-05-18T07:24:28.073+0000] {processor.py:156} INFO - Started process (PID=2906) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:24:28.076+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:24:28.079+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:24:28.078+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:24:34.591+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:24:34.659+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:24:34.658+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:24:34.746+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:24:34.746+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:24:34.809+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.741 seconds
+[2023-05-18T07:25:05.286+0000] {processor.py:156} INFO - Started process (PID=2941) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:25:05.288+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:25:05.290+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:25:05.290+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:25:11.643+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:25:11.721+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:25:11.720+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:25:11.986+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:25:11.986+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:25:12.045+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.765 seconds
+[2023-05-18T07:25:42.499+0000] {processor.py:156} INFO - Started process (PID=2969) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:25:42.502+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:25:42.504+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:25:42.503+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:25:48.988+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:25:49.229+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:25:49.055+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:25:49.301+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:25:49.301+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:25:49.359+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.866 seconds
+[2023-05-18T07:26:19.546+0000] {processor.py:156} INFO - Started process (PID=2997) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:26:19.548+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:26:19.551+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:26:19.551+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:26:25.852+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:26:26.123+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:26:26.122+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:26:26.229+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:26:26.228+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:26:26.307+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.767 seconds
+[2023-05-18T07:26:56.780+0000] {processor.py:156} INFO - Started process (PID=3025) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:26:56.783+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:26:56.786+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:26:56.785+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:27:03.479+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:27:03.569+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:27:03.568+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:27:03.680+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:27:03.679+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:27:03.751+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.979 seconds
+[2023-05-18T07:27:34.784+0000] {processor.py:156} INFO - Started process (PID=3060) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:27:34.786+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:27:34.789+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:27:34.788+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:27:41.697+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:27:41.791+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:27:41.790+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:27:41.873+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:27:41.872+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:27:41.939+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 7.162 seconds
+[2023-05-18T07:28:12.311+0000] {processor.py:156} INFO - Started process (PID=3088) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:28:12.314+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:28:12.317+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:28:12.316+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:28:18.667+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:28:18.752+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:28:18.751+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:28:19.055+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:28:19.054+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:28:19.131+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.825 seconds
+[2023-05-18T07:28:49.629+0000] {processor.py:156} INFO - Started process (PID=3116) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:28:49.631+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:28:49.635+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:28:49.634+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:28:56.018+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:28:56.299+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:28:56.092+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:28:56.383+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:28:56.382+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:28:56.464+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.843 seconds
+[2023-05-18T07:29:26.953+0000] {processor.py:156} INFO - Started process (PID=3145) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:29:26.956+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:29:26.959+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:29:26.958+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:29:33.381+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:29:33.678+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:29:33.676+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:29:33.766+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:29:33.766+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:29:33.831+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.888 seconds
+[2023-05-18T07:30:04.345+0000] {processor.py:156} INFO - Started process (PID=3173) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:30:04.348+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:30:04.351+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:30:04.350+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:30:11.092+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:30:11.161+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:30:11.160+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:30:11.238+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:30:11.237+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:30:11.320+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.983 seconds
+[2023-05-18T07:30:41.829+0000] {processor.py:156} INFO - Started process (PID=3208) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:30:41.831+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:30:41.834+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:30:41.834+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:30:48.137+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:30:48.210+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:30:48.209+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:30:48.303+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:30:48.303+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:30:48.362+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.541 seconds
+[2023-05-18T07:31:18.719+0000] {processor.py:156} INFO - Started process (PID=3236) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:31:18.721+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:31:18.724+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:31:18.723+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:31:25.207+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:31:25.285+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:31:25.283+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:31:25.533+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:31:25.532+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:31:25.605+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.892 seconds
+[2023-05-18T07:31:56.114+0000] {processor.py:156} INFO - Started process (PID=3264) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:31:56.116+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:31:56.119+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:31:56.118+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:32:02.711+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:32:02.967+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:32:02.785+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:32:03.047+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:32:03.046+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:32:03.136+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 7.029 seconds
+[2023-05-18T07:32:34.108+0000] {processor.py:156} INFO - Started process (PID=3292) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:32:34.111+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:32:34.113+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:32:34.112+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:32:40.379+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:32:40.618+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:32:40.617+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:32:40.698+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:32:40.698+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:32:40.762+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.659 seconds
+[2023-05-18T07:33:11.269+0000] {processor.py:156} INFO - Started process (PID=3327) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:33:11.271+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:33:11.274+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:33:11.274+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:33:17.919+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:33:18.028+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:33:18.026+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:33:18.120+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:33:18.119+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:33:18.187+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.925 seconds
+[2023-05-18T07:33:48.662+0000] {processor.py:156} INFO - Started process (PID=3355) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:33:48.664+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:33:48.667+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:33:48.666+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:33:55.049+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:33:55.132+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:33:55.131+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:33:55.222+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:33:55.222+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:33:55.293+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 6.638 seconds
+[2023-05-18T07:34:25.419+0000] {processor.py:156} INFO - Started process (PID=3383) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:34:25.421+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:34:25.422+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:34:25.422+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:34:27.301+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:34:27.328+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:34:27.328+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:34:27.456+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:34:27.456+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:34:27.479+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.062 seconds
+[2023-05-18T07:34:57.624+0000] {processor.py:156} INFO - Started process (PID=3411) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:34:57.625+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:34:57.626+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:34:57.626+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:34:59.662+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:34:59.690+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:34:59.689+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:34:59.824+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:34:59.824+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:34:59.849+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.227 seconds
+[2023-05-18T07:36:02.845+0000] {processor.py:156} INFO - Started process (PID=164) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:36:02.846+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:36:02.847+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:02.847+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:36:05.393+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:05.393+0000] {font_manager.py:1443} INFO - generated new fontManager
+[2023-05-18T07:36:07.444+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:36:07.754+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:07.754+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:fondue_dag
+[2023-05-18T07:36:07.767+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:07.767+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:fondue_dag
+[2023-05-18T07:36:07.777+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:07.777+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:fondue_dag
+[2023-05-18T07:36:07.778+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:07.778+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:36:07.792+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:07.791+0000] {dag.py:2747} INFO - Creating ORM DAG for fondue_dag
+[2023-05-18T07:36:07.806+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:07.806+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:36:07.831+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 4.989 seconds
+[2023-05-18T07:36:38.084+0000] {processor.py:156} INFO - Started process (PID=194) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:36:38.086+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:36:38.087+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:38.087+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:36:40.209+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:36:40.238+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:40.237+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:36:40.267+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:36:40.266+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:36:40.292+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.210 seconds
+[2023-05-18T07:37:10.514+0000] {processor.py:156} INFO - Started process (PID=222) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:37:10.516+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:37:10.517+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:37:10.517+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:37:12.611+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:37:12.642+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:37:12.642+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:37:12.782+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:37:12.782+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:37:12.808+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.295 seconds
+[2023-05-18T07:37:43.038+0000] {processor.py:156} INFO - Started process (PID=251) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:37:43.040+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:37:43.042+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:37:43.041+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:37:45.285+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:37:45.313+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:37:45.312+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:37:45.340+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:37:45.340+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-09T00:00:00+00:00, run_after=2023-05-10T00:00:00+00:00
+[2023-05-18T07:37:45.364+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.331 seconds
+[2023-05-18T07:38:15.645+0000] {processor.py:156} INFO - Started process (PID=476) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:38:15.646+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:38:15.647+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:38:15.647+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:38:19.229+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:38:19.279+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:38:19.278+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:38:19.325+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:38:19.324+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:38:19.369+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 3.728 seconds
+[2023-05-18T07:38:49.658+0000] {processor.py:156} INFO - Started process (PID=1778) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:38:49.659+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:38:49.660+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:38:49.660+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:38:58.132+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:38:58.189+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:38:58.188+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:38:58.309+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:38:58.308+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:38:58.432+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 8.777 seconds
+[2023-05-18T07:39:28.958+0000] {processor.py:156} INFO - Started process (PID=2753) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:39:28.962+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:39:28.969+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:39:28.968+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:39:34.689+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:39:34.725+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:39:34.725+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:39:34.756+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:39:34.756+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:39:34.784+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 5.834 seconds
+[2023-05-18T07:40:05.034+0000] {processor.py:156} INFO - Started process (PID=2781) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:40:05.035+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:40:05.036+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:40:05.036+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:40:06.954+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:40:06.982+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:40:06.981+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:40:07.111+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:40:07.110+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:40:07.134+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.102 seconds
+[2023-05-18T07:40:37.259+0000] {processor.py:156} INFO - Started process (PID=2809) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:40:37.260+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:40:37.262+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:40:37.262+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:40:39.260+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:40:39.286+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:40:39.286+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:40:39.417+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:40:39.417+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:40:39.443+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.186 seconds
+[2023-05-18T07:41:09.846+0000] {processor.py:156} INFO - Started process (PID=2837) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:41:09.847+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:41:09.848+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:41:09.848+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:41:11.839+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:41:11.997+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:41:11.996+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:41:12.027+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:41:12.027+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:41:12.054+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.209 seconds
+[2023-05-18T07:41:42.277+0000] {processor.py:156} INFO - Started process (PID=2865) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:41:42.278+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:41:42.280+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:41:42.280+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:41:44.209+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:41:44.338+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:41:44.337+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:41:44.363+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:41:44.363+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:41:44.387+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.112 seconds
+[2023-05-18T07:42:14.489+0000] {processor.py:156} INFO - Started process (PID=2893) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:42:14.490+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:42:14.491+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:42:14.491+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:42:16.554+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:42:16.580+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:42:16.580+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:42:16.608+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:42:16.608+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:42:16.632+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.145 seconds
+[2023-05-18T07:42:46.815+0000] {processor.py:156} INFO - Started process (PID=2921) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:42:46.816+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:42:46.818+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:42:46.817+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:42:48.872+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:42:48.898+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:42:48.898+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:42:48.925+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:42:48.925+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:42:48.952+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.139 seconds
+[2023-05-18T07:43:19.056+0000] {processor.py:156} INFO - Started process (PID=2949) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:43:19.057+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:43:19.058+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:43:19.058+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:43:21.094+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:43:21.125+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:43:21.124+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:43:21.287+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:43:21.287+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:43:21.312+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.258 seconds
+[2023-05-18T07:43:51.386+0000] {processor.py:156} INFO - Started process (PID=2977) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:43:51.387+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:43:51.388+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:43:51.388+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:43:53.392+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:43:53.420+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:43:53.419+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:43:53.553+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:43:53.553+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:43:53.578+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.195 seconds
+[2023-05-18T07:44:23.767+0000] {processor.py:156} INFO - Started process (PID=3005) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:44:23.769+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:44:23.770+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:44:23.770+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:44:25.800+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:44:25.932+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:44:25.932+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:44:25.961+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:44:25.961+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:44:25.988+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.223 seconds
+[2023-05-18T07:44:56.216+0000] {processor.py:156} INFO - Started process (PID=3033) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:44:56.217+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:44:56.218+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:44:56.218+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:44:58.385+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:44:58.526+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:44:58.525+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:44:58.555+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:44:58.555+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:44:58.582+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.369 seconds
+[2023-05-18T07:45:28.815+0000] {processor.py:156} INFO - Started process (PID=3068) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:45:28.816+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:45:28.817+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:45:28.817+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:45:30.786+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:45:30.814+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:45:30.814+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:45:30.841+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:45:30.840+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:45:30.864+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.051 seconds
+[2023-05-18T07:46:01.041+0000] {processor.py:156} INFO - Started process (PID=3096) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:46:01.042+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:46:01.043+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:46:01.043+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:46:03.070+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:46:03.137+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:46:03.136+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:46:03.180+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:46:03.179+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:46:03.214+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.177 seconds
+[2023-05-18T07:46:33.418+0000] {processor.py:156} INFO - Started process (PID=3145) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:46:33.420+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:46:33.421+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:46:33.420+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:46:35.549+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:46:35.583+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:46:35.582+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:46:35.723+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:46:35.723+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:46:35.748+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.332 seconds
+[2023-05-18T07:47:06.052+0000] {processor.py:156} INFO - Started process (PID=3194) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:47:06.053+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:47:06.054+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:47:06.054+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:47:07.985+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:47:08.133+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:47:08.014+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:47:08.163+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:47:08.163+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:47:08.188+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.138 seconds
+[2023-05-18T07:47:38.510+0000] {processor.py:156} INFO - Started process (PID=3243) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:47:38.511+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:47:38.511+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:47:38.511+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:47:40.624+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:47:40.786+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:47:40.786+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:47:40.816+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:47:40.816+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:47:40.844+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.337 seconds
+[2023-05-18T07:48:11.142+0000] {processor.py:156} INFO - Started process (PID=3292) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:48:11.143+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:48:11.145+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:48:11.144+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:48:13.386+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:48:13.414+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:48:13.413+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:48:13.445+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:48:13.444+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:48:13.476+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.336 seconds
+[2023-05-18T07:48:43.817+0000] {processor.py:156} INFO - Started process (PID=3344) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:48:43.818+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:48:43.819+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:48:43.819+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:48:46.117+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:48:46.148+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:48:46.148+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:48:46.176+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:48:46.176+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:48:46.201+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.387 seconds
+[2023-05-18T07:49:16.511+0000] {processor.py:156} INFO - Started process (PID=3408) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:49:16.512+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:49:16.513+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:49:16.512+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:49:18.542+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:49:18.575+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:49:18.574+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:49:18.715+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:49:18.715+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:49:18.742+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.233 seconds
+[2023-05-18T07:49:48.791+0000] {processor.py:156} INFO - Started process (PID=3458) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:49:48.792+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:49:48.793+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:49:48.793+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:49:50.739+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:49:50.864+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:49:50.765+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:49:50.890+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:49:50.890+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:49:50.914+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.125 seconds
+[2023-05-18T07:50:21.056+0000] {processor.py:156} INFO - Started process (PID=3507) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:50:21.057+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:50:21.058+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:50:21.058+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:50:23.185+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:50:23.326+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:50:23.326+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:50:23.354+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:50:23.353+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:50:23.377+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.324 seconds
+[2023-05-18T07:50:53.517+0000] {processor.py:156} INFO - Started process (PID=3556) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:50:53.518+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:50:53.520+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:50:53.520+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:50:55.737+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:50:55.765+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:50:55.764+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:50:55.795+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:50:55.795+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:50:55.822+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.307 seconds
+[2023-05-18T07:51:26.155+0000] {processor.py:156} INFO - Started process (PID=3605) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:51:26.157+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:51:26.158+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:51:26.158+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:51:28.460+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:51:28.492+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:51:28.491+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:51:28.524+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:51:28.524+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:51:28.568+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.415 seconds
+[2023-05-18T07:51:58.898+0000] {processor.py:156} INFO - Started process (PID=3657) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:51:58.899+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:51:58.900+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:51:58.900+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:52:01.518+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:52:01.552+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:52:01.552+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:52:01.710+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:52:01.710+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:52:01.738+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.843 seconds
+[2023-05-18T07:52:32.103+0000] {processor.py:156} INFO - Started process (PID=3713) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:52:32.104+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:52:32.106+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:52:32.105+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:52:34.022+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:52:34.153+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:52:34.051+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:52:34.181+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:52:34.181+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:52:34.209+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.108 seconds
+[2023-05-18T07:53:04.505+0000] {processor.py:156} INFO - Started process (PID=3762) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:53:04.506+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:53:04.508+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:53:04.508+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:53:06.395+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:53:06.521+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:53:06.521+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:53:06.547+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:53:06.546+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:53:06.571+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.069 seconds
+[2023-05-18T07:53:36.877+0000] {processor.py:156} INFO - Started process (PID=3811) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:53:36.878+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:53:36.880+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:53:36.879+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:53:38.830+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:53:38.858+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:53:38.857+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:53:38.884+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:53:38.884+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:53:38.908+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.033 seconds
+[2023-05-18T07:54:09.202+0000] {processor.py:156} INFO - Started process (PID=3860) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:54:09.204+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:54:09.205+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:54:09.205+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:54:11.135+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:54:11.163+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:54:11.162+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:54:11.189+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:54:11.189+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:54:11.213+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.012 seconds
+[2023-05-18T07:54:41.517+0000] {processor.py:156} INFO - Started process (PID=3909) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:54:41.518+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:54:41.520+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:54:41.520+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:54:43.377+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:54:43.403+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:54:43.402+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:54:43.533+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:54:43.533+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:54:43.556+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.041 seconds
+[2023-05-18T07:55:13.856+0000] {processor.py:156} INFO - Started process (PID=3959) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:55:13.857+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:55:13.858+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:55:13.858+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:55:15.692+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:55:15.822+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:55:15.718+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:55:15.850+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:55:15.850+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:55:15.874+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.020 seconds
+[2023-05-18T07:55:46.173+0000] {processor.py:156} INFO - Started process (PID=4008) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:55:46.174+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:55:46.175+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:55:46.175+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:55:48.018+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:55:48.144+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:55:48.144+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:55:48.170+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:55:48.170+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:55:48.194+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.024 seconds
+[2023-05-18T07:56:18.347+0000] {processor.py:156} INFO - Started process (PID=4057) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:56:18.348+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:56:18.349+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:56:18.349+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:56:20.494+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:56:20.519+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:56:20.519+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:56:20.545+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:56:20.545+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:56:20.571+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.226 seconds
+[2023-05-18T07:56:50.649+0000] {processor.py:156} INFO - Started process (PID=4107) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:56:50.650+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:56:50.652+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:56:50.651+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:56:52.581+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:56:52.612+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:56:52.612+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:56:52.640+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:56:52.640+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:56:52.667+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.020 seconds
+[2023-05-18T07:57:22.964+0000] {processor.py:156} INFO - Started process (PID=4156) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:57:22.965+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:57:22.967+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:57:22.967+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:57:24.839+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:57:24.865+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:57:24.864+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:57:24.991+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:57:24.991+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:57:25.018+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.055 seconds
+[2023-05-18T07:57:55.318+0000] {processor.py:156} INFO - Started process (PID=4205) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:57:55.319+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:57:55.320+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:57:55.320+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:57:57.180+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:57:57.306+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:57:57.305+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:57:57.331+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:57:57.331+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:57:57.354+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.038 seconds
+[2023-05-18T07:58:27.657+0000] {processor.py:156} INFO - Started process (PID=4255) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:58:27.658+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:58:27.659+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:58:27.659+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:58:29.513+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:58:29.645+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:58:29.644+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:58:29.673+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:58:29.672+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:58:29.697+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.043 seconds
+[2023-05-18T07:58:59.998+0000] {processor.py:156} INFO - Started process (PID=4304) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:58:59.999+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:59:00.000+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:59:00.000+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:59:02.058+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:59:02.083+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:59:02.083+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:59:02.110+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:59:02.110+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:59:02.134+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.139 seconds
+[2023-05-18T07:59:32.442+0000] {processor.py:156} INFO - Started process (PID=4360) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:59:32.443+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T07:59:32.444+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:59:32.444+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:59:34.383+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T07:59:34.410+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:59:34.409+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T07:59:34.439+0000] {logging_mixin.py:149} INFO - [2023-05-18T07:59:34.439+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T07:59:34.462+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.022 seconds
+[2023-05-18T08:00:04.761+0000] {processor.py:156} INFO - Started process (PID=4409) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:00:04.762+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:00:04.764+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:00:04.763+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:00:06.681+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:00:06.709+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:00:06.708+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:00:06.736+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:00:06.736+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:00:06.760+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.001 seconds
+[2023-05-18T08:00:37.070+0000] {processor.py:156} INFO - Started process (PID=4458) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:00:37.072+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:00:37.073+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:00:37.073+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:00:38.939+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:00:39.072+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:00:39.072+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:00:39.100+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:00:39.100+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:00:39.125+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.057 seconds
+[2023-05-18T08:01:09.613+0000] {processor.py:156} INFO - Started process (PID=4507) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:01:09.614+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:01:09.615+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:01:09.615+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:01:11.536+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:01:11.563+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:01:11.562+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:01:11.589+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:01:11.589+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:01:11.612+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.001 seconds
+[2023-05-18T08:01:41.902+0000] {processor.py:156} INFO - Started process (PID=4556) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:01:41.903+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:01:41.904+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:01:41.904+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:01:43.831+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:01:43.857+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:01:43.857+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:01:43.886+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:01:43.885+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:01:43.910+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.010 seconds
+[2023-05-18T08:02:14.209+0000] {processor.py:156} INFO - Started process (PID=4605) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:02:14.210+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:02:14.211+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:02:14.211+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:02:16.263+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:02:16.290+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:02:16.290+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:02:16.318+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:02:16.318+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:02:16.345+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.139 seconds
+[2023-05-18T08:02:46.656+0000] {processor.py:156} INFO - Started process (PID=4654) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:02:46.657+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:02:46.658+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:02:46.658+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:02:48.616+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:02:48.756+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:02:48.645+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:02:48.784+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:02:48.784+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:02:48.811+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.157 seconds
+[2023-05-18T08:03:19.113+0000] {processor.py:156} INFO - Started process (PID=4724) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:03:19.114+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:03:19.115+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:03:19.115+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:03:20.962+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:03:21.093+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:03:21.093+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:03:21.119+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:03:21.119+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:03:21.147+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.036 seconds
+[2023-05-18T08:03:51.215+0000] {processor.py:156} INFO - Started process (PID=4791) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:03:51.217+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:03:51.218+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:03:51.218+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:03:53.529+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:03:53.556+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:03:53.556+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:03:53.583+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:03:53.582+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:03:53.608+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.396 seconds
+[2023-05-18T08:04:23.785+0000] {processor.py:156} INFO - Started process (PID=5498) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:04:23.786+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:04:23.787+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:04:23.787+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:04:26.226+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:04:26.260+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:04:26.260+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:04:26.295+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:04:26.295+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:04:26.327+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.545 seconds
+[2023-05-18T08:04:57.223+0000] {processor.py:156} INFO - Started process (PID=6645) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:04:57.224+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:04:57.225+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:04:57.225+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:05:00.021+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:05:00.051+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:05:00.051+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:05:00.080+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:05:00.080+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:05:00.107+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.887 seconds
+[2023-05-18T08:05:30.460+0000] {processor.py:156} INFO - Started process (PID=7876) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:05:30.461+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:05:30.463+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:05:30.462+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:05:32.690+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:05:32.725+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:05:32.721+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:05:32.756+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:05:32.756+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:05:32.784+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.326 seconds
+[2023-05-18T08:06:03.107+0000] {processor.py:156} INFO - Started process (PID=8583) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:06:03.108+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:06:03.110+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:06:03.110+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:06:05.103+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:06:05.233+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:06:05.233+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:06:05.263+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:06:05.263+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:06:05.286+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.182 seconds
+[2023-05-18T08:06:35.580+0000] {processor.py:156} INFO - Started process (PID=8632) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:06:35.581+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:06:35.582+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:06:35.582+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:06:37.630+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:06:37.657+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:06:37.656+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:06:37.684+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:06:37.684+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:06:37.709+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.132 seconds
+[2023-05-18T08:07:08.008+0000] {processor.py:156} INFO - Started process (PID=8681) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:07:08.009+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:07:08.010+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:07:08.010+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:07:10.209+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:07:10.243+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:07:10.242+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:07:10.270+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:07:10.270+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:07:10.298+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.294 seconds
+[2023-05-18T08:07:40.616+0000] {processor.py:156} INFO - Started process (PID=8730) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:07:40.617+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:07:40.618+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:07:40.618+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:07:42.811+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:07:42.838+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:07:42.838+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:07:42.869+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:07:42.869+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:07:42.893+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.279 seconds
+[2023-05-18T08:08:13.205+0000] {processor.py:156} INFO - Started process (PID=8779) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:08:13.207+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:08:13.208+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:08:13.208+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:08:15.272+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:08:15.300+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:08:15.298+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:08:15.328+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:08:15.328+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:08:15.352+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.149 seconds
+[2023-05-18T08:08:45.647+0000] {processor.py:156} INFO - Started process (PID=8828) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:08:45.648+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:08:45.649+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:08:45.649+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:08:47.763+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:08:47.797+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:08:47.796+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:08:47.832+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:08:47.831+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:08:47.861+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.217 seconds
+[2023-05-18T08:09:18.160+0000] {processor.py:156} INFO - Started process (PID=8877) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:09:18.161+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:09:18.162+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:09:18.162+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:09:20.241+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:09:20.267+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:09:20.266+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:09:20.294+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:09:20.294+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:09:20.317+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.160 seconds
+[2023-05-18T08:09:50.403+0000] {processor.py:156} INFO - Started process (PID=8926) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:09:50.404+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:09:50.406+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:09:50.406+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:09:52.581+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:09:52.610+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:09:52.610+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:09:52.639+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:09:52.639+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:09:52.666+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.266 seconds
+[2023-05-18T08:10:22.957+0000] {processor.py:156} INFO - Started process (PID=8975) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:10:22.959+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:10:22.959+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:10:22.959+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:10:24.998+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:10:25.024+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:10:25.024+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:10:25.051+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:10:25.051+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:10:25.074+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.118 seconds
+[2023-05-18T08:10:55.375+0000] {processor.py:156} INFO - Started process (PID=9025) to work on /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:10:55.376+0000] {processor.py:799} INFO - Processing file /opt/airflow/dags/fondue_dag.py for tasks to queue
+[2023-05-18T08:10:55.377+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:10:55.377+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:10:57.405+0000] {processor.py:809} INFO - DAG(s) dict_keys(['fondue_dag']) retrieved from /opt/airflow/dags/fondue_dag.py
+[2023-05-18T08:10:57.435+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:10:57.433+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-05-18T08:10:57.461+0000] {logging_mixin.py:149} INFO - [2023-05-18T08:10:57.461+0000] {dag.py:3490} INFO - Setting next_dagrun for fondue_dag to 2023-05-18T00:00:00+00:00, run_after=2023-05-19T00:00:00+00:00
+[2023-05-18T08:10:57.485+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/fondue_dag.py took 2.112 seconds
