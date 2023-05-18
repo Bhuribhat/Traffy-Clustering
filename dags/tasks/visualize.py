@@ -106,7 +106,7 @@ def geospatial_visualize():
         count = int(row['type_count'])
 
         # Pop up information
-        information = f"<b>Problem Count: {count}<b><br><br>Province: {row['province']}<br>District: {row['district']}"
+        information = f"<b>Problem Count: {count}</b><br><br>Province: {row['province']}<br>District: {row['district']}"
         information += f"<br>State: {row['state']}<br>Problem: {row['type']}<br>Timestamp: {row['timestamp']}"
 
         iframe = folium.IFrame(information)
@@ -204,8 +204,6 @@ def visualize_data(ti, **context) :
     # compare_count_plot(df, 'district', 'District')
     # compare_count_plot(df, 'state', 'Problems Count')
 
-    # TODO : Aggregate data by state, district, provice, to show type counts
-
     #---------- Visualize clusterd data ----------#
     fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True, figsize=(12, 6))
     ax1.set_title('K-Means')
@@ -241,6 +239,7 @@ def visualize_data(ti, **context) :
         process_group  = folium.FeatureGroup(name="Ongoing").add_to(base_map)
         waiting_group  = folium.FeatureGroup(name="Upcoming").add_to(base_map)
         finished_group = folium.FeatureGroup(name="Complete").add_to(base_map)
+        forward_group  = folium.FeatureGroup(name="Forward").add_to(base_map)
 
         # Loop through the rows of the dataframe and add a marker for each location
         for index, row in df.iterrows():
@@ -280,8 +279,20 @@ def visualize_data(ti, **context) :
                         fill_opacity=0.7
                     )
                 )
-            else:
+            elif row['state'] == 'เสร็จสิ้น':
                 finished_group.add_child(
+                    folium.CircleMarker(
+                        location=[lon, lat],
+                        popup=popup,
+                        tooltip=f"Cluster: {label}",
+                        fill=True,
+                        fill_color=color_producer(label),
+                        color='black',
+                        fill_opacity=0.7
+                    )
+                )
+            else:
+                forward_group.add_child(
                     folium.CircleMarker(
                         location=[lon, lat],
                         popup=popup,

@@ -44,7 +44,6 @@ AIRFLOW_UID=50000
 >> docker-compose up -d             # run container in background
 ```
 
-
 Run `docker ps` to check the condition of the containers and make sure that no containers are in unhealthy condition:
 
 ```bash
@@ -56,6 +55,13 @@ ed9b09fc84b1   apache/airflow:2.6.0   "/usr/bin/dumb-init …"   3 minutes ago  
 74f3bbe506eb   postgres:13            "docker-entrypoint.s…"   18 minutes ago   Up 17 minutes (healthy)   5432/tcp                           compose_postgres_1
 ```
 
+Run airflow DAG with parameters in `json` format for the tasks:
+
+```bash
+>> airflow trigger_dag 'dag_name' -r 'run_id' --conf '{"key":"value"}'
+```
+
+> Example: --conf '{"filter":["ถนน","ทางเท้า"]}' or Trigger DAG w/ config in UI to filter data  
 
 ## Open Airflow UI
 
@@ -79,7 +85,7 @@ The webserver is available at: `http://localhost:6543`
 ```
 
 
-# Interactive Dashboard
+## Interactive Dashboard
 
 The webserver is available at: `http://localhost:8501`  
 
