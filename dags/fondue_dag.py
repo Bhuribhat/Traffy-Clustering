@@ -3,12 +3,13 @@ from airflow.providers.http.sensors.http import HttpSensor
 from airflow.operators.email_operator import EmailOperator
 from airflow.providers.http.operators.http import SimpleHttpOperator
 from airflow.operators.python import PythonOperator
+
 from datetime import datetime, timedelta
 
-from utils.load_data import load_data
-from utils.clean_data import clean_data
-from utils.clustering import kmean_cluster
-from utils.visualize import visualize_data
+from tasks.load_data import load_data
+from tasks.clean_data import clean_data
+from tasks.clustering import kmean_cluster
+from tasks.visualize import visualize_data
 
 default_args = {
     'owner': 'pras',

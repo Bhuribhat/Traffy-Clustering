@@ -5,4 +5,15 @@ __pycache__/
 
 test.py
 
-logs/scheduler/latest
+logs/dag_id=fondue_dag
+logs/dag_processor_manager
+logs/scheduler/*
+
+mlruns/
+
+data/cleaned_fondue.csv
+data/clustered_fondue.csv
+data/fondue.csv
+data/data_cleaned_by_length.csv
+
+outputs/
