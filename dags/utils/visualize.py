@@ -74,9 +74,8 @@ def compare_pie_plot(data, column, title):
     plt.savefig(f'/opt/airflow/outputs/compare_pie_plot_{title}.png')
 
 
-# TODO replace df with clean df
 def geospatial_visualize():
-    df = load_files(['teamchadchart'])[0]
+    df = load_files(['data_cleaned_by_length'])[0]
 
     # color procedure
     def color_producer(count):
@@ -201,7 +200,7 @@ def visualize_data(ti, **context) :
 
     #---------- Visualize dataset ----------#
     compare_count_plot(df, 'type', 'Number of Issues by Type')
-    # compare_count_plot(df, 'district', 'District')
+    compare_count_plot(df, 'district', 'District')
     compare_count_plot(df, 'type_count', 'Problems Count')
     compare_count_plot(df, 'state', 'Problems Count')
     compare_pie_plot(df, 'state', None)
@@ -252,7 +251,6 @@ def visualize_data(ti, **context) :
             # Pop up information
             information = f"<b>Problem Type: {row['type']}</b><br><br>Cluster: {label}<br>Province: {row['province']}"
             information += f"<br>District: {row['district']}<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
-            # information += f"<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
 
             iframe = folium.IFrame(information)
             popup = folium.Popup(iframe, min_width=300, max_width=300, min_height=140, max_height=170)
