@@ -16,10 +16,10 @@ sns.set_style('whitegrid')
 
 # size factor
 factor = 3
-font_path = '/opt/airflow/data/THSarabunChula-Regular.ttf'
 
 
 def compare_count_plot(data, column, title):
+    font_path = '/opt/airflow/data/THSarabunChula-Regular.ttf'
     type_list = data[column].value_counts().index
 
     # set font
@@ -35,6 +35,7 @@ def compare_count_plot(data, column, title):
 
 
 def compare_pie_plot(data, column, title):
+    font_path = '/opt/airflow/data/THSarabunChula-Regular.ttf'
     font_prop = fm.FontProperties(fname=font_path)
 
     # set the font as the default for Matplotlib
