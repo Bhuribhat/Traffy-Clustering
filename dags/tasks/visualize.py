@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.font_manager as fm
 
 from scipy.spatial.distance import cdist
-from tasks.files_util import save_files, load_files
+from tasks.files_util import save_files, load_files, load_static
 from sklearn.preprocessing import StandardScaler
 
 from matplotlib import pyplot as plt
@@ -19,7 +19,7 @@ factor = 3
 
 
 def compare_count_plot(data, column, title):
-    font_path = '/opt/airflow/data/THSarabunChula-Regular.ttf'
+    font_path = '/opt/airflow/static/THSarabunChula-Regular.ttf'
     type_list = data[column].value_counts().index
 
     # set font
@@ -35,7 +35,7 @@ def compare_count_plot(data, column, title):
 
 
 def compare_pie_plot(data, column, title):
-    font_path = '/opt/airflow/data/THSarabunChula-Regular.ttf'
+    font_path = '/opt/airflow/static/THSarabunChula-Regular.ttf'
     font_prop = fm.FontProperties(fname=font_path)
 
     # set the font as the default for Matplotlib
@@ -200,9 +200,9 @@ def visualize_data(ti, **context) :
     cluster_data = scaler.fit_transform(x)
 
     #---------- Visualize dataset ----------#
-    compare_count_plot(df, 'type', 'Number of Issues by Type')
-    compare_count_plot(df, 'district', 'District')
-    compare_count_plot(df, 'state', 'Problems Count')
+    # compare_count_plot(df, 'type', 'Number of Issues by Type')
+    # compare_count_plot(df, 'district', 'District')
+    # compare_count_plot(df, 'state', 'Problems Count')
 
     # TODO : Aggregate data by state, district, provice, to show type counts
 
@@ -299,7 +299,7 @@ def visualize_data(ti, **context) :
     #---------- Geospatial visualization With Low Income Heatmap ----------#
     from folium.plugins import HeatMap
 
-    broke_df = load_files(['low_income'])[0]
+    broke_df = load_static(['low_income'])[0]
 
     cols = ["X", "Y", "Lat", "Long"]
     for col in cols :

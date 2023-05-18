@@ -7,7 +7,7 @@ import seaborn as sns
 sns.set_style('whitegrid')
 
 import matplotlib as mpl
-mpl.font_manager.fontManager.addfont('./data/THSarabunChula-Regular.ttf')
+mpl.font_manager.fontManager.addfont('./static/THSarabunChula-Regular.ttf')
 mpl.rc('font', family='TH Sarabun Chula')
 
 
@@ -27,7 +27,7 @@ def choose_sidebar_vis():
 
 
 def compare_count_plot(data, column, title):
-    font_path = './data/THSarabunChula-Regular.ttf'
+    font_path = './static/THSarabunChula-Regular.ttf'
     type_list = data[column].value_counts().index
 
     # set font
@@ -132,7 +132,7 @@ def main():
         st.subheader("Heatmap Visualization")
         st.caption("Source: https://gdcatalog.nha.co.th/dataset/dataset11_01")
 
-        df_broke = pd.read_csv("./data/low_income.csv")
+        df_broke = pd.read_csv("./static/low_income.csv")
         st.write(df_broke.head(5))
 
         html_file2 = open("./outputs/Result_Map.html", "r", encoding="utf-8").read()
