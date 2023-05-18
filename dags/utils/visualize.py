@@ -1,27 +1,25 @@
-from scipy.spatial.distance import cdist
-from matplotlib import pyplot as plt
-import matplotlib.font_manager as fm
-plt.style.use('ggplot')
+import folium
+import numpy as np
 import pandas as pd
+import matplotlib.font_manager as fm
+
+from scipy.spatial.distance import cdist
 from utils.files_util import save_files, load_files
 from sklearn.preprocessing import StandardScaler
-import numpy as np
+
+from matplotlib import pyplot as plt
+plt.style.use('ggplot')
 
 import seaborn as sns
 sns.set_style('whitegrid')
 
-import folium
 
 # size factor
 factor = 3
-
+font_path = '/opt/airflow/data/THSarabunChula-Regular.ttf'
 
 
 def compare_count_plot(data, column, title):
-    # create a new font with Thai support
-    font_path = '/opt/airflow/data/THSarabunChula-Regular.ttf'
-
-    # data[column].value_counts()
     type_list = data[column].value_counts().index
 
     # set font
@@ -33,12 +31,10 @@ def compare_count_plot(data, column, title):
     ax = sns.countplot(y=column, data=data, order=type_list)
     ax.bar_label(ax.containers[0])
     plt.title(title)
-    plt.savefig('/opt/airflow/outputs/compare_count_plot.png')
+    plt.savefig(f'/opt/airflow/outputs/compare_count_plot_{title}.png')
 
 
 def compare_pie_plot(data, column, title):
-    # create a new font with Thai support
-    font_path = '/opt/airflow/data/THSarabunChula-Regular.ttf'
     font_prop = fm.FontProperties(fname=font_path)
 
     # set the font as the default for Matplotlib
@@ -75,14 +71,13 @@ def compare_pie_plot(data, column, title):
     plt.setp(pcts, color='white', fontweight='bold')
     plt.title(title)
     plt.tight_layout()
-    plt.savefig('/opt/airflow/outputs/compare_pie_plot.png')
+    plt.savefig(f'/opt/airflow/outputs/compare_pie_plot_{title}.png')
+
 
 def visualize_data(ti, **context) :
     df = load_files(['clustered_fondue'])[0]
-
     selected = ['latitude', 'longitude']
     df_describe = df[selected]
-
     x = df_describe.values
 
     # Standardize variables with Standard Scaler
@@ -90,10 +85,13 @@ def visualize_data(ti, **context) :
     scaler.fit(x)
 
     cluster_data = scaler.fit_transform(x)
-    cluster_data
 
     #---------- Visualize dataset ----------#
     compare_count_plot(df, 'type', 'Number of Issues by Type')
+    # compare_count_plot(df, 'district', 'District')
+    compare_count_plot(df, 'type_count', 'Problems Count')
+    compare_count_plot(df, 'state', 'Problems Count')
+    compare_pie_plot(df, 'state', None)
     # TODO : Aggregate data by state, district, provice, to show type counts
 
     #---------- Visualize clusterd data ----------#
@@ -116,9 +114,11 @@ def visualize_data(ti, **context) :
     def color_producer(cluster_label):
         return hex_colors[int(cluster_label)]
 
+    # RGB format to hex
     def rgb_to_hex(rgb):
         r, g, b = rgb
-        return '#{:02x}{:02x}{:02x}'.format(int(r*255), int(g*255), int(b*255))
+        r, g, b = int(r * 255), int(g * 255), int(b * 255)
+        return '#{:02x}{:02x}{:02x}'.format(r, g, b)
 
     # Create a color dictionary mapping cluster labels to colors
     color_dict = dict(zip(cluster_counts.index, palette * 255))
@@ -137,8 +137,9 @@ def visualize_data(ti, **context) :
             label = int(row['cluster_label'])
 
             # Pop up information
-            information = f"<b>Problem Type: {row['type']}</b><br><br>Cluster: {label}<br>Province: {row['province']}"
             # information += f"<br>District: {row['district']}<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
+            information = f"<b>Problem Type: {row['type']}</b><br><br>Cluster: {label}<br>Province: {row['province']}"
+            information += f"<br>State: {row['state']}<br>Timestamp: {row['timestamp']}"
 
             iframe = folium.IFrame(information)
             popup = folium.Popup(iframe, min_width=300, max_width=300, min_height=140, max_height=170)
@@ -149,7 +150,7 @@ def visualize_data(ti, **context) :
                     folium.CircleMarker(
                         location=[lon, lat],
                         popup=popup,
-                        tooltip=row['cluster_label'],
+                        tooltip=f"Cluster: {label}",
                         fill=True,
                         fill_color=color_producer(label),
                         color='black',
@@ -161,7 +162,7 @@ def visualize_data(ti, **context) :
                     folium.CircleMarker(
                         location=[lon, lat],
                         popup=popup,
-                        tooltip=row['cluster_label'],
+                        tooltip=f"Cluster: {label}",
                         fill=True,
                         fill_color=color_producer(label),
                         color='black',
@@ -173,7 +174,7 @@ def visualize_data(ti, **context) :
                     folium.CircleMarker(
                         location=[lon, lat],
                         popup=popup,
-                        tooltip=row['cluster_label'],
+                        tooltip=f"Cluster: {label}",
                         fill=True,
                         fill_color=color_producer(label),
                         color='black',
@@ -192,9 +193,10 @@ def visualize_data(ti, **context) :
     cols = ["X", "Y", "Lat", "Long"]
     for col in cols :
         broke_df[col] = broke_df[col].astype(float)
-    broke_df = broke_df[broke_df["PROV_NAMT"] == "กรุงเทพมหานคร"]
 
+    broke_df = broke_df[broke_df["PROV_NAMT"] == "กรุงเทพมหานคร"]
     heat_df = broke_df[["Lat", "Long"]]
+
     # List comprehension to make out list of lists
     heat_data = [[row['Lat'], row['Long']] for index, row in heat_df.iterrows()]
 
@@ -205,5 +207,4 @@ def visualize_data(ti, **context) :
     )
 
     plot_cluster_by_problems(broke_map)
-
     broke_map.save("/opt/airflow/outputs/Result_Map.html")
