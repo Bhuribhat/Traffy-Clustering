@@ -84,8 +84,7 @@ The webserver is available at: `http://localhost:6543`
 The webserver is available at: `http://localhost:8501`  
 
 ```bash
->> streamlit run streamlit_app.py   # run streamlit
->> Ctrl + C                         # close streamlit
+>> streamlit run streamlit_app.py
 ```
 
 <p align="left">
