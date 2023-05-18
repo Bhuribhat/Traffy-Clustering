@@ -100,23 +100,31 @@ def main():
     df = pd.read_csv("./data/data_cleaned_by_length.csv")
     df_explode = pd.read_csv("./data/fondue.csv")
     df_explode = clean_data_explode_type(df_explode)
+    df_filter = pd.read_csv("./data/cleaned_fondue.csv")
     df.drop(['problem_type_abdul', 'note'], axis=1, inplace=True)
 
     # Display Visualization images
-    options = ['type', 'district', 'state', 'type_count']
+    options = ['all types', 'type', 'district', 'state', 'type_count']
     data_choice = selectbox_without_default("Choose a column", options)
     radio = choose_sidebar_vis()
 
-    if data_choice is not '':
+    if data_choice != '':
         st.subheader("Data Visualization")
         st.write('Selected option:', data_choice)
-        if data_choice != 'type':
-            st.pyplot(compare_count_plot(df, data_choice, data_choice.upper()))
+        if data_choice == 'all types':
+            st.pyplot(compare_count_plot(df_explode, 'type', 'Number of Issues by Type'))
+        elif data_choice == 'type':
+            st.pyplot(compare_count_plot(df_filter, 'type', 'Number of Issues by Type'))
         else:
-            st.pyplot(compare_count_plot(df_explode, data_choice, 'Number of Issues by Type'))
+            st.pyplot(compare_count_plot(df, data_choice, data_choice.upper()))
 
     if radio == 'Geospatial':
+        filter_types = df_filter['type'].value_counts().index
         st.write(df.head(5))
+
+        st.write("Filter type:")
+        for filter_type in filter_types:
+            st.write(f"- {filter_type}")
 
         # Display HTML file
         st.subheader("Geospatial Visualization")
