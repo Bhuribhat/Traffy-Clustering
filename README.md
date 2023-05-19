@@ -95,13 +95,14 @@ The webserver is available at: `http://localhost:8501`
 
 <p align="left">
     <img src="./assets/dashboard1.png" height="400" />
+    <img src="./assets/dashboard2.png" height="400" />
 </p>
 
 
 ## Interesting Insight
 
 - low-income heatmap  
-- filter by road, sidewalk, and ditch
+- filter: ["ความสะอาด"]
 
 <p align="left">
     <img src="./assets/result.png" height="400" />
