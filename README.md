@@ -66,7 +66,11 @@ Run airflow DAG with parameters in `json` format for the tasks:
 ## Open Airflow UI
 
 The webserver is available at: `http://localhost:8080`  
-The default account has the login __airflow__ and the password __airflow__. 
+The default account has the login __airflow__ and the password __airflow__.  
+
+<p align="left">
+    <img src="./assets/airflow.png" height="400" />
+</p>
 
 
 ## Close Airflow Docker
@@ -83,6 +87,10 @@ The webserver is available at: `http://localhost:6543`
 ```bash
 >> mlflow ui --port 6543
 ```
+
+<p align="left">
+    <img src="./assets/mlflow.png" height="400" />
+</p>
 
 
 ## Interactive Dashboard
