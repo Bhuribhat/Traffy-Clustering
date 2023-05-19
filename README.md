@@ -57,11 +57,10 @@ ed9b09fc84b1   apache/airflow:2.6.0   "/usr/bin/dumb-init …"   3 minutes ago  
 
 Run airflow DAG with parameters in `json` format for the tasks:
 
-> Example: --conf '{"filter":["ถนน","ทางเท้า"]}' or Trigger DAG w/ config in UI to filter data  
-
 ```bash
 >> airflow trigger_dag 'dag_name' -r 'run_id' --conf '{"key":"value"}'
 ```
+> Example: --conf '{"filter":["ถนน","ทางเท้า"]}' or Trigger DAG w/ config in UI to filter data  
 
 ## Open Airflow UI
 
@@ -82,18 +81,17 @@ The default account has the login __airflow__ and the password __airflow__.
 
 ## MLflow UI
 
-The webserver is available at: `http://localhost:6543`  
+- The webserver is available at: `http://localhost:6543`  
 
 ```bash
 >> mlflow ui --port 6543
 ```
 
-Create a REST API locally with MLflow serving:  
+- Create a REST API locally with MLflow serving (optional):  
 
 ```bash
 >> mlflow models serve --model-url runs:/run_id/model --port 1244
 ```
-
 
 <p align="left">
     <img src="./assets/mlflow.png" height="400" />
@@ -122,3 +120,11 @@ The webserver is available at: `http://localhost:8501`
 <p align="left">
     <img src="./assets/result.png" height="400" />
 </p>
+
+
+## Resources
+
+- [airflow docker](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
+- [mlflow tutorial](https://mlflow.org/docs/latest/tutorials-and-examples/tutorial.html)
+- [streamlit with mlflow](https://github.com/deepfindr/gnn-project)
+- [End-End ml pipeline](https://towardsdatascience.com/end-to-end-machine-learning-pipeline-with-docker-and-apache-airflow-from-scratch-35f6a75f57ad)
