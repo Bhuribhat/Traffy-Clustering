@@ -57,11 +57,11 @@ ed9b09fc84b1   apache/airflow:2.6.0   "/usr/bin/dumb-init …"   3 minutes ago  
 
 Run airflow DAG with parameters in `json` format for the tasks:
 
+> Example: --conf '{"filter":["ถนน","ทางเท้า"]}' or Trigger DAG w/ config in UI to filter data  
+
 ```bash
 >> airflow trigger_dag 'dag_name' -r 'run_id' --conf '{"key":"value"}'
 ```
-
-> Example: --conf '{"filter":["ถนน","ทางเท้า"]}' or Trigger DAG w/ config in UI to filter data  
 
 ## Open Airflow UI
 
@@ -88,6 +88,13 @@ The webserver is available at: `http://localhost:6543`
 >> mlflow ui --port 6543
 ```
 
+Create a REST API locally with MLflow serving:  
+
+```bash
+>> mlflow models serve --model-url runs:/run_id/model --port 1244
+```
+
+
 <p align="left">
     <img src="./assets/mlflow.png" height="400" />
 </p>
@@ -110,7 +117,7 @@ The webserver is available at: `http://localhost:8501`
 ## Interesting Insight
 
 - low-income heatmap  
-- filter: ["ความสะอาด"]
+- filter: ["ความสะอาด"] via postman
 
 <p align="left">
     <img src="./assets/result.png" height="400" />
