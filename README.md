@@ -112,10 +112,17 @@ The webserver is available at: `http://localhost:8501`
 </p>
 
 
-## Interesting Insight
+## Interesting Insight with Low-Income Heatmap
 
-- low-income heatmap  
-- filter: ["ความสะอาด"] via postman
+Send __POST__ request via Postman to `http://localhost:8080/api/v1/dags/fondue_dag/dagRuns`
+
+```json
+{
+    "conf":{
+        "filter":["ความสะอาด"]
+    }
+}
+```
 
 <p align="left">
     <img src="./assets/result.png" height="400" />
@@ -127,4 +134,5 @@ The webserver is available at: `http://localhost:8501`
 - [airflow docker](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
 - [mlflow tutorial](https://mlflow.org/docs/latest/tutorials-and-examples/tutorial.html)
 - [streamlit with mlflow](https://github.com/deepfindr/gnn-project)
-- [End-End ml pipeline](https://towardsdatascience.com/end-to-end-machine-learning-pipeline-with-docker-and-apache-airflow-from-scratch-35f6a75f57ad)
+- [End-End ML pipeline](https://towardsdatascience.com/end-to-end-machine-learning-pipeline-with-docker-and-apache-airflow-from-scratch-35f6a75f57ad)
+- [Clustering for insights](https://towardsdatascience.com/clustering-with-more-than-two-features-try-this-to-explain-your-findings-b053007d680a)
